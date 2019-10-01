@@ -1,11 +1,34 @@
 {
-  "name": "gatsby-starter-blog",
-  "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "16-davidosomething-com",
+  "homepage": "https://www.davidosomething.com",
+  "version": "1.0.0",
+  "description": "davidosomething.com - 2020 version",
+  "license": "UNLICENSED",
+  "author": {
+    "name": "David O'Trakoun",
+    "email": "me@davidosomething.com",
+    "url": "https://www.davidosomething.com"
+  },
+  "contributors": [
+    "David O'Trakoun <me@davidosomething.com> (https://www.davidosomething.com/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidosomething.com/20.davidosomething.com.git"
+  },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/davidosomething/20.davidosomething.com/issues",
+    "email": "me@davidosomething.com"
+  },
+  "private": true,
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
     "gatsby": "^2.15.28",
@@ -30,30 +53,9 @@
     "react-dom": "^16.10.1",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75",
-    "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typography": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
-  },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   }
 }
