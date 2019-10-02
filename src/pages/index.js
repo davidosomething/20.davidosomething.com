@@ -21,15 +21,15 @@ export default ({ data, location }) => {
                 <Link to={node.fields.slug}>{title}</Link>
               </h3>
               <p
-                style={{
-                  ...scale(-1),
-                  marginBottom: 0,
-                }}
+                style={{ marginBottom: 0 }}
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.subheader,
                 }}
               />
-              <small style={{ ...scale(-2) }}>
+              <small style={{
+                ...scale(-1 / 2),
+                color: '#dcc',
+              }}>
                 Published on {node.frontmatter.datePublished}
               </small>
             </header>

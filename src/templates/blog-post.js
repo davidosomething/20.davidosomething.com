@@ -17,23 +17,23 @@ export default ({ data, location, pageContext }) => {
         description={post.frontmatter.subheader || post.excerpt}
       />
       <article>
-        <header>
-          <h1
-            style={{
-              marginTop: rhythm(1),
-              marginBottom: 0,
-            }}
-          >
-            {post.frontmatter.title}
-          </h1>
+        <header style={{ marginBottom: rhythm(1) }}>
+          <h1 style={{
+            ...scale(5 / 4),
+            marginBottom: rhythm(0.5),
+          }}>{post.frontmatter.title}</h1>
           <p
-            style={{
-              ...scale(-2),
-              marginBottom: rhythm(1),
+            style={{ marginBottom: 0 }}
+            dangerouslySetInnerHTML={{
+              __html: post.frontmatter.subheader,
             }}
-          >
+          />
+          <small style={{
+            ...scale(-1 / 2),
+            color: '#dcc',
+          }}>
             Published on {post.frontmatter.datePublished}
-          </p>
+          </small>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -50,6 +50,7 @@ export default ({ data, location, pageContext }) => {
             flexWrap: `wrap`,
             justifyContent: `space-between`,
             listStyle: `none`,
+            marginLeft: 0,
             padding: 0,
           }}
         >

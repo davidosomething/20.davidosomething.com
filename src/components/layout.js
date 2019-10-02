@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { rhythm } from "../utils/typography"
+import { rhythm, scale } from "../utils/typography"
 
 export default ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -10,13 +10,13 @@ export default ({ location, title, children }) => {
       style={{
         marginLeft: `auto`,
         marginRight: `auto`,
-        maxWidth: rhythm(32),
+        maxWidth: rhythm(24),
         padding: rhythm(1),
       }}
     >
       <header>
         <h1 style={{
-          fontWeight: '300',
+          ...scale(1 / 3),
           marginBottom: rhythm(1.5),
           marginTop: 0,
         }}>
