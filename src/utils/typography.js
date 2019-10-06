@@ -1,4 +1,5 @@
 import Typography from "typography"
+import styles from '../styles/variables.css';
 
 const typography = new Typography({
   title: 'davidosomething-2020-mplus',
@@ -26,17 +27,25 @@ const typography = new Typography({
     // }
   ],
   headerFontFamily: [ 'Lexend Deca', 'sans-serif' ],
-  headerWeight: 400,
+  headerWeight: 700,
+  //blockMarginBottom: 2 / 3,
   bodyFontFamily: [ 'Lexend Deca', 'sans-serif' ],
   bodyWeight: 400,
   boldWeight: 700,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => ({
+    'h2,h3,h4,h5,h6': {
+      marginBottom: rhythm(1 / 2),
+      marginTop: rhythm(1 / 2),
+    },
+    h4: {
+      color: styles.off1,
+    },
     a: {
-      color: '#49a',
+      color: styles.link,
       textDecoration: 'none',
     },
     'a:hover, a:active': {
-      color: '#ace',
+      color: styles.linkHover,
     },
     '.gatsby-highlight': {
       marginBottom: rhythm(1),

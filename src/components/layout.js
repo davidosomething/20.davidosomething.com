@@ -1,23 +1,17 @@
-import React from "react"
-import { Link } from "gatsby"
-import { rhythm, scale } from "../utils/typography"
+import React from 'react';
+import { Link } from 'gatsby';
+import { rhythm, scale } from '../utils/typography';
+import classes from './layout.module.css';
 
 export default ({ location, title, children }) => (
-  <div
-    style={{
-      marginLeft: `auto`,
-      marginRight: `auto`,
-      maxWidth: rhythm(24),
-      padding: rhythm(1),
-    }}
-  >
+  <div className={classes.wrapper}>
     <header>
       <h1 style={{
         ...scale(1 / 3),
         marginBottom: rhythm(1.5),
         marginTop: 0,
       }}>
-        <Link to={`/`} style={{ color: `inherit` }}>{title}</Link>
+        <Link to={`/`} className={classes.homeLink}>{title}</Link>
       </h1>
     </header>
     <main>{children}</main>
