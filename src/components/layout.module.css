@@ -1,5 +1,8 @@
+@value variables: '../styles/variables.css';
+@value background, border from variables;
+
 :global .headroom--pinned {
-  box-shadow: 0 0 1px #ccc;
+  box-shadow: 0 0 1px border;
 }
 
 .wrapper {
@@ -11,8 +14,8 @@
 
 .mainHeader {
   composes: wrapper;
-  background: white;
-  padding: 0.5rem 1rem;
+  background: background;
+  padding: 1rem;
 }
 
 .title {

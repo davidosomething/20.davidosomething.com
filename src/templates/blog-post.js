@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import styles from '../styles/variables.css';
 
 export default ({ data, location, pageContext }) => {
   const post = data.markdownRemark;
@@ -30,7 +31,7 @@ export default ({ data, location, pageContext }) => {
           />
           <small style={{
             ...scale(-1 / 2),
-            color: '#dcc',
+            color: styles.off2,
           }}>
             Published on {post.frontmatter.datePublished}
           </small>
