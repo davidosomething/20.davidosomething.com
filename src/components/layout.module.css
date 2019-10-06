@@ -1,10 +1,30 @@
+:global .headroom--pinned {
+  box-shadow: 0 0 1px #ccc;
+}
+
 .wrapper {
   margin-left: auto;
   margin-right: auto;
   max-width: 40rem;
-  padding: 1rem;
+  padding: 0 1rem;
+}
+
+.mainHeader {
+  composes: wrapper;
+  background: white;
+  padding: 0.5rem 1rem;
+}
+
+.title {
+  margin: 0;
 }
 
 .homeLink {
   color: inherit;
+}
+
+.mainWrapper {
+  composes: wrapper;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
 }
