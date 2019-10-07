@@ -3,7 +3,7 @@ slug:           whitespace-in-vim
 title:          "Whitespace settings in Vim"
 subheader:      "Getting whitespace to behave in Vim using settings and plugins"
 datePublished:  2016-01-12
-image:          "/assets/img/posts/Vimlogo.svg.png"
+image:          "./assets/Vimlogo.svg.png"
 tags:
   - vim
   - plugins

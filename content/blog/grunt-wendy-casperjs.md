@@ -3,7 +3,7 @@ slug:           grunt-wendy-casperjs
 title:          "grunt-wendy – CasperJS for GruntJS"
 subheader:      "A super customizable CasperJS test runner with output filtering"
 datePublished:  2015-09-19T00:00:07+00:00
-image:          "/assets/img/posts/wendy.png"
+image:          "./assets/wendy.png"
 tags:
   - casperjs
   - e2e
@@ -11,7 +11,8 @@ tags:
   - phantomjs
   - testing
 ---
-<img src="/assets/img/posts/wendy.png" class="image--left" alt="grunt-wendy logo">
+<img src="./assets/wendy.png" class="image--left" alt="grunt-wendy logo">
+
 [grunt-wendy](https://github.com/davidosomething/grunt-wendy) is my latest Grunt
 plugin. It’s a CasperJS test runner with customizable filtering and formatting
 options, which CasperJS alone lacks.

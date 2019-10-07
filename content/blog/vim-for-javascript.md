@@ -3,7 +3,7 @@ slug:           "vim-for-javascript"
 title:          "Setting up Vim for JavaScript development"
 subheader:      "Configuring Vim and comparisons of JavaScript-specific Vim plugins"
 datePublished:  2016-01-09
-image:          "/assets/img/posts/Vimlogo.svg.png"
+image:          "./assets/Vimlogo.svg.png"
 tags:
   - vim
   - plugins
