@@ -29,7 +29,7 @@ export default ({ data, location }) => {
               />
               <small style={{
                 ...scale(-1 / 2),
-                color: styles.off2,
+                color: styles.off1,
               }}>
                 Published on {node.frontmatter.datePublished}
               </small>

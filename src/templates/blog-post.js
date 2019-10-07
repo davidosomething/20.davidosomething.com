@@ -22,7 +22,9 @@ export default ({ data, location, pageContext }) => {
           <h1 style={{
             ...scale(5 / 4),
             marginBottom: rhythm(0.5),
-          }}>{post.frontmatter.title}</h1>
+          }}>
+            <Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link>
+          </h1>
           <p className={classes.subheader}
             dangerouslySetInnerHTML={{
               __html: post.frontmatter.subheader,
@@ -35,7 +37,10 @@ export default ({ data, location, pageContext }) => {
             Published on {post.frontmatter.datePublished}
           </small>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section
+          className={classes.content}
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
         <hr style={{ marginBottom: rhythm(1) }} />
       </article>
       <nav>
@@ -82,6 +87,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        slug
         datePublished(formatString: "MMMM DD, YYYY")
         subheader
       }

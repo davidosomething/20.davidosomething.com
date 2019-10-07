@@ -1,12 +1,29 @@
 @value variables: '../styles/variables.css';
-@value off2 from variables;
+@value off1, off3 from variables;
 
 .subheader {
   margin-bottom: 0;
 }
 
 .datePublished {
-  color: off2;
+  color: off1;
+}
+
+.content ul {
+  list-style-position: outside;
+  margin-left: 0;
+}
+
+.content blockquote p {
+  box-sizing: border-box;
+  border-left: 0.5em off3 solid;
+  padding-left: 0.5em;
+}
+
+.content :global(.citation) {
+  color: off1;
+  margin-top: -1em;
+  text-align: right;
 }
 
 .postNavList {

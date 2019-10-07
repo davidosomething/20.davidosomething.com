@@ -1,5 +1,6 @@
 import Typography from "typography"
 import styles from '../styles/variables.css';
+import blogPostClasses from '../templates/blog-post.module.css';
 
 const typography = new Typography({
   title: 'davidosomething-2020-mplus',
@@ -46,6 +47,9 @@ const typography = new Typography({
     },
     'a:hover, a:active': {
       color: styles.linkHover,
+    },
+    '.citation': {
+      ...scale(-1 / 3),
     },
     '.gatsby-highlight': {
       marginBottom: rhythm(1),
