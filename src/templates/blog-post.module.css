@@ -1,0 +1,19 @@
+@value variables: '../styles/variables.css';
+@value off2 from variables;
+
+.subheader {
+  margin-bottom: 0;
+}
+
+.datePublished {
+  color: off2;
+}
+
+.postNavList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}

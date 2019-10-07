@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
-import styles from '../styles/variables.css';
+import classes from './blog-post.module.css';
 
 export default ({ data, location, pageContext }) => {
   const post = data.markdownRemark;
@@ -23,48 +23,41 @@ export default ({ data, location, pageContext }) => {
             ...scale(5 / 4),
             marginBottom: rhythm(0.5),
           }}>{post.frontmatter.title}</h1>
-          <p
-            style={{ marginBottom: 0 }}
+          <p className={classes.subheader}
             dangerouslySetInnerHTML={{
               __html: post.frontmatter.subheader,
             }}
           />
-          <small style={{
-            ...scale(-1 / 2),
-            color: styles.off2,
-          }}>
+          <small
+            className={classes.datePublished}
+            style={{ ...scale(-1 / 2) }}
+          >
             Published on {post.frontmatter.datePublished}
           </small>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+        <hr style={{ marginBottom: rhythm(1) }} />
       </article>
-
       <nav>
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            marginLeft: 0,
-            padding: 0,
-          }}
-        >
+        <ul className={classes.postNavList}>
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
+              <Link
+                style={{ ...scale(-1 /2) }}
+                to={previous.fields.slug}
+                rel="prev"
+              >
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
+              <Link
+                style={{ ...scale(-1 /2) }}
+                to={next.fields.slug}
+                rel="next"
+              >
                 {next.frontmatter.title} →
               </Link>
             )}

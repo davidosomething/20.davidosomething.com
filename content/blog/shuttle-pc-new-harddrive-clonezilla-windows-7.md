@@ -1,5 +1,5 @@
 ---
-title: "Shuttle PC - new harddrive, Clonezilla &#038; Windows 7"
+title: "Shuttle PC - new harddrive, Clonezilla & Windows 7"
 subheader: "Description of my Shuttle PC hardware build - part 3"
 datePublished: 2010-12-03T23:12:44+00:00
 tags:
