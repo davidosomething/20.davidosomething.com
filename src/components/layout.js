@@ -1,7 +1,7 @@
 import React from 'react';
+import { scale } from '../utils/typography';
 import { Link } from 'gatsby';
 import Headroom from 'react-headroom';
-import { scale } from '../utils/typography';
 import classes from './layout.module.css';
 
 export default ({ location, title, children }) => [
@@ -12,5 +12,38 @@ export default ({ location, title, children }) => [
       </h1>
     </header>
   </Headroom>,
-  <main key="main" className={classes.mainWrapper}>{children}</main>
+  <main key="main" className={classes.mainWrapper}>{children}</main>,
+  <footer
+    className={classes.footer}
+    style={{
+      ...scale(-1 / 2),
+      lineHeight: '1.4rem',
+    }}
+  >
+    <div className={classes.footerWrapper}>
+      <h2 style={{ ...scale(-1 / 4) }}>About me</h2>
+      <p>
+        I'm a web developer in New York City. I primarily work in JavaScript
+        (node and React); sometimes I dive into Java, PHP, Python, Bash, and
+        Lua. I'm a Vim and GNU/Linux user and enthusiast.
+      </p>
+      <p>
+        I am currently, a Senior Software Engineer at <a
+        href="https://www.squarespace.com">Squarespace</a> (but this blog is
+        my own pet project). I've held similar roles at Elite Daily/Bustle,
+        Time Inc., and Arnold NYC/Worldwide in the past years.<br />
+        I was an Adjunct Instructor at Boston University CDIA for
+        a while, where I taught web development and WordPress stuff.<br />
+        I used to freelance regularly, but now I prefer tinkering with open
+        source.
+      </p>
+      <aside>
+        <ul>
+          <li><a href="https://twitter.com/davidosomething"><span>Twitter</span></a></li>
+          <li><a href="https://github.com/davidosomething"><span>GitHub</span></a></li>
+          <li><a href="https://www.linkedin.com/in/davidosomething/"><span>LinkedIn</span></a></li>
+        </ul>
+      </aside>
+    </div>
+  </footer>,
 ];

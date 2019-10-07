@@ -1,7 +1,10 @@
-@value background: #fff;
+@value background: #fcfcfc;
+@value invertedBackground: #222;
 @value border: #ccc;
 @value off1: #977;
 @value off2: #dcc;
 @value off3: #edd;
 @value link: #49a;
+@value lighterLink: #6bc;
 @value linkHover: #ace;
+@value lighterLinkHover: #cef;

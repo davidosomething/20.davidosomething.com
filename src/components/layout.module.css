@@ -1,5 +1,6 @@
 @value variables: '../styles/variables.css';
-@value background, border from variables;
+@value background, border, invertedBackground from variables;
+@value lighterLink, lighterLinkHover from variables;
 
 :global .headroom--pinned {
   box-shadow: 0 0 1px border;
@@ -30,4 +31,33 @@
   composes: wrapper;
   margin-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.footer {
+  background: invertedBackground;
+  color: background;
+}
+
+.footerWrapper {
+  composes: wrapper;
+  max-width: 28rem;
+  padding: 3rem 1rem;
+}
+
+.footer a {
+  color: lighterLink;
+}
+
+.footer a:hover {
+  color: lighterLinkHover;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.footer li {
+  flex: 1 1 33%;
 }
