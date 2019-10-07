@@ -14,6 +14,7 @@ export default ({ location, title, children }) => [
   </Headroom>,
   <main key="main" className={classes.mainWrapper}>{children}</main>,
   <footer
+    key="footer"
     className={classes.footer}
     style={{
       ...scale(-1 / 2),
