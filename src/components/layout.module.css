@@ -45,6 +45,7 @@
 
 .footer {
   background: subBackground;
+  margin-left: -30px;
 }
 
 .footerWrapper {
@@ -76,7 +77,7 @@
 .footer ul {
   display: flex;
   flex-direction: row;
-  margin: 2em auto 0;
+  margin: 2em auto;
   list-style: none;
 }
 
