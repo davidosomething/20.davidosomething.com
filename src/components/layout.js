@@ -2,6 +2,9 @@ import React from 'react';
 import { scale } from '../utils/typography';
 import { Link } from 'gatsby';
 import Headroom from 'react-headroom';
+import github from 'super-tiny-icons/images/svg/github.svg';
+import linkedin from 'super-tiny-icons/images/svg/linkedin.svg';
+import twitter from 'super-tiny-icons/images/svg/twitter.svg';
 import classes from './layout.module.css';
 
 export default ({ location, title, children }) => [
@@ -12,7 +15,9 @@ export default ({ location, title, children }) => [
       </h1>
     </header>
   </Headroom>,
-  <main key="main" className={classes.mainWrapper}>{children}</main>,
+  <div key="main" className={classes.mainWrapper}>
+    <main className={classes.main}>{children}</main>
+  </div>,
   <footer
     key="footer"
     className={classes.footer}
@@ -40,9 +45,9 @@ export default ({ location, title, children }) => [
       </p>
       <aside>
         <ul>
-          <li><a href="https://twitter.com/davidosomething"><span>Twitter</span></a></li>
-          <li><a href="https://github.com/davidosomething"><span>GitHub</span></a></li>
-          <li><a href="https://www.linkedin.com/in/davidosomething/"><span>LinkedIn</span></a></li>
+          <li><a href="https://twitter.com/davidosomething"><img src={twitter} alt="@davidosomething on Twitter" /></a></li>
+          <li><a href="https://github.com/davidosomething"><img src={github} alt="davidosomething on GitHub" /></a></li>
+          <li><a href="https://www.linkedin.com/in/davidosomething/"><img src={linkedin} alt="LinkedIn" /></a></li>
         </ul>
       </aside>
     </div>

@@ -1,11 +1,10 @@
 import Typography from "typography"
 import styles from '../styles/variables.css';
-import blogPostClasses from '../templates/blog-post.module.css';
 
 const typography = new Typography({
   title: 'davidosomething-2020-mplus',
   baseFontSize: '18px',
-  baseLineHeight: '1.6',
+  baseLineHeight: '1.8',
   scaleRatio: 1.8,
   googleFonts: [
     {
@@ -57,13 +56,16 @@ const typography = new Typography({
     'p ~ .gatsby-highlight': {
       marginTop: rhythm(-0.5),
     },
+    ':not(pre) > code[class*="language-"]': {
+      ...scale(-1 / 2),
+    },
     '.gatsby-highlight > pre[class*="language-"]': {
-      marginBottom: 0,
-      marginTop: 0,
       padding: `${rhythm(0.2)} ${rhythm(0.5)}`,
+      lineHeight: 1.2,
     },
     '.gatsby-highlight > pre[class*="language-"] > code[class*="language-"]': {
-      ...scale(-1 / 2),
+      ...scale(-2 / 3),
+      lineHeight: 'inherit',
     },
   }),
 })

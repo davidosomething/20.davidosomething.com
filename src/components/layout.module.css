@@ -1,6 +1,11 @@
 @value variables: '../styles/variables.css';
-@value background, border, invertedBackground from variables;
+@value background, invertedBackground, subBackground from variables;
+@value border from variables;
 @value lighterLink, lighterLinkHover from variables;
+
+:global body {
+  background: background;
+}
 
 :global .headroom--pinned {
   box-shadow: 0 0 1px border;
@@ -28,28 +33,24 @@
 }
 
 .mainWrapper {
-  composes: wrapper;
+  box-shadow: 0 1em 1em rgba(0,0,0,0.05);
   margin-top: 4rem;
   padding-bottom: 4rem;
+  position: relative;
+}
+
+.main {
+  composes: wrapper;
 }
 
 .footer {
-  background: invertedBackground;
-  color: background;
+  background: subBackground;
 }
 
 .footerWrapper {
   composes: wrapper;
   max-width: 28rem;
   padding: 3rem 1rem;
-}
-
-.footer a {
-  color: lighterLink;
-}
-
-.footer a:hover {
-  color: lighterLinkHover;
 }
 
 .footer ul {
@@ -61,3 +62,19 @@
 .footer li {
   flex: 1 1 33%;
 }
+
+.footer li a {
+  position: relative;
+  top: 0;
+  transition: top 0.2s ease-out;
+}
+
+.footer li a:hover {
+  top: -2px;
+}
+
+.footer li img {
+  height: 2em;
+  width: 2em;
+}
+

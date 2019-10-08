@@ -14,6 +14,12 @@
   margin-left: 0;
 }
 
+.content p > img {
+  display: block;
+  margin: 1em auto;
+  box-shadow: 0 0.5em 1em off3;
+}
+
 .content blockquote p {
   box-sizing: border-box;
   border-left: 0.5em off3 solid;
@@ -24,6 +30,18 @@
   color: off1;
   margin-top: -1em;
   text-align: right;
+}
+
+.content :not(pre) > code[class*="language-"] {
+  padding: 0.5em;
+}
+
+.content :global(.gatsby-highlight > pre[class*="language-"]) {
+  border-radius: 0.5em;
+  box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
+  padding: 1em 1.5em;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .postNavList {
