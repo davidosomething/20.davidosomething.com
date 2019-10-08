@@ -1,6 +1,7 @@
 @value variables: '../styles/variables.css';
 @value background, invertedBackground, subBackground from variables;
-@value border, off1 from variables;
+@value border from variables;
+@value footerLink, footerLinkHover from variables;
 
 :global body {
   background: background;
@@ -60,6 +61,14 @@
   top: 3.5em
 }
 
+.footer a {
+  color: footerLink;
+}
+
+.footer a:hover {
+  color: footerLinkHover;
+}
+
 .footer p {
   margin-bottom: 0.5em;
 }
@@ -92,7 +101,6 @@
 }
 
 .footer small {
-  color: off1;
   display: block;
   text-align: center;
 }

@@ -2,10 +2,10 @@
 @value subBackground: #faf8f6;
 @value invertedBackground: #222;
 @value border: #ccc;
-@value off1: #977;
+@value off1: #677;
 @value off2: #dcc;
 @value off3: #edd;
-@value link: #49a;
-@value lighterLink: #6bc;
-@value linkHover: #ace;
-@value lighterLinkHover: #cef;
+@value link: #26b;
+@value linkHover: #48f;
+@value footerLink: #a22;
+@value footerLinkHover: #c44;

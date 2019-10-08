@@ -48,14 +48,12 @@ export default ({ location, title, children }) => [
         University CDIA, where I taught various web development and WordPress
         courses.
       </p>
-      <aside>
-        <ul>
-          <li><a href="https://twitter.com/davidosomething"><img src={twitter} alt="@davidosomething on Twitter" /></a></li>
-          <li><a href="https://github.com/davidosomething"><img src={github} alt="davidosomething on GitHub" /></a></li>
-          <li><a href="https://www.linkedin.com/in/davidosomething/"><img src={linkedin} alt="LinkedIn" /></a></li>
-          <li><a href="/rss.xml"><img src={rss} alt="RSS feed for this site" /></a></li>
-        </ul>
-      </aside>
+      <ul>
+        <li><a href="https://twitter.com/davidosomething"><img src={twitter} alt="@davidosomething on Twitter" /></a></li>
+        <li><a href="https://github.com/davidosomething"><img src={github} alt="davidosomething on GitHub" /></a></li>
+        <li><a href="https://www.linkedin.com/in/davidosomething/"><img src={linkedin} alt="LinkedIn" /></a></li>
+        <li><a href="/rss.xml"><img src={rss} alt="RSS feed for this site" /></a></li>
+      </ul>
       <small>Copyright &copy; {year} David O'Trakoun</small>
     </div>
   </footer>,

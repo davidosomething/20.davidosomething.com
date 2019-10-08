@@ -18,9 +18,9 @@ export default ({ data, location }) => {
         return (
           <article key={node.fields.slug} style={{ marginBottom: rhythm(1.5) }}>
             <header>
-              <h3 style={{ marginBottom: rhythm(0.3) }}>
+              <h2 style={{ marginBottom: rhythm(0.3) }}>
                 <Link to={node.fields.slug}>{title}</Link>
-              </h3>
+              </h2>
               <p
                 style={{ marginBottom: 0 }}
                 dangerouslySetInnerHTML={{
