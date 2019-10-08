@@ -7,3 +7,5 @@
 ## TODO
 
 - [ ] [sitemap](https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap/?=)
+- [ ] [better code
+  color](https://github.com/andrewbranch/gatsby-remark-vscode)
