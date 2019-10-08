@@ -9,9 +9,13 @@
   color: off1;
 }
 
-.content ul {
+.content > ul {
   list-style-position: outside;
   margin-left: 0;
+}
+
+.content p + ul {
+  margin-top: -0.5em;
 }
 
 .content p > img {
