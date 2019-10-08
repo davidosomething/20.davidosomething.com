@@ -5,6 +5,7 @@ import Headroom from 'react-headroom';
 import github from 'super-tiny-icons/images/svg/github.svg';
 import linkedin from 'super-tiny-icons/images/svg/linkedin.svg';
 import twitter from 'super-tiny-icons/images/svg/twitter.svg';
+import rss from 'super-tiny-icons/images/svg/rss.svg';
 import classes from './layout.module.css';
 
 export default ({ location, title, children }) => [
@@ -48,6 +49,7 @@ export default ({ location, title, children }) => [
           <li><a href="https://twitter.com/davidosomething"><img src={twitter} alt="@davidosomething on Twitter" /></a></li>
           <li><a href="https://github.com/davidosomething"><img src={github} alt="davidosomething on GitHub" /></a></li>
           <li><a href="https://www.linkedin.com/in/davidosomething/"><img src={linkedin} alt="LinkedIn" /></a></li>
+          <li><a href="/rss.xml"><img src={rss} alt="RSS feed for this site" /></a></li>
         </ul>
       </aside>
     </div>
