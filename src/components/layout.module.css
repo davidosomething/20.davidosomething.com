@@ -1,7 +1,6 @@
 @value variables: '../styles/variables.css';
 @value background, invertedBackground, subBackground from variables;
-@value border from variables;
-@value lighterLink, lighterLinkHover from variables;
+@value border, off1 from variables;
 
 :global body {
   background: background;
@@ -61,14 +60,20 @@
   top: 3.5em
 }
 
+.footer p {
+  margin-bottom: 0.5em;
+}
+
 .footer ul {
   display: flex;
   flex-direction: row;
+  margin: 2em auto 0;
   list-style: none;
 }
 
 .footer li {
   flex: 1 1;
+  text-align: center;
 }
 
 .footer li a {
@@ -86,3 +91,8 @@
   width: 2em;
 }
 
+.footer small {
+  color: off1;
+  display: block;
+  text-align: center;
+}
