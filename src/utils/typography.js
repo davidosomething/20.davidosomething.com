@@ -47,6 +47,9 @@ const typography = new Typography({
     'a:hover, a:active': {
       color: styles.linkHover,
     },
+    li: {
+      marginBottom: rhythm(1 / 3),
+    },
     '.citation': {
       ...scale(-1 / 3),
     },
