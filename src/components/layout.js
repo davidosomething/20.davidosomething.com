@@ -1,6 +1,7 @@
 import React from 'react';
 import { scale } from '../utils/typography';
 import { Link } from 'gatsby';
+import { OutboundLink } from 'gatsby-plugin-gtag';
 import Headroom from 'react-headroom';
 import avatar from '../../content/assets/avatar.png';
 import github from 'super-tiny-icons/images/svg/github.svg';
@@ -49,10 +50,18 @@ export default ({ location, title, children }) => [
         courses.
       </p>
       <ul>
-        <li><a href="https://twitter.com/davidosomething"><img src={twitter} alt="@davidosomething on Twitter" /></a></li>
-        <li><a href="https://github.com/davidosomething"><img src={github} alt="davidosomething on GitHub" /></a></li>
-        <li><a href="https://www.linkedin.com/in/davidosomething/"><img src={linkedin} alt="LinkedIn" /></a></li>
-        <li><a href="/rss.xml"><img src={rss} alt="RSS feed for this site" /></a></li>
+        <li>
+          <OutboundLink href="https://twitter.com/davidosomething"><img src={twitter} alt="@davidosomething on Twitter" /></OutboundLink>
+        </li>
+        <li>
+          <OutboundLink href="https://github.com/davidosomething"><img src={github} alt="davidosomething on GitHub" /></OutboundLink>
+        </li>
+        <li>
+          <OutboundLink href="https://www.linkedin.com/in/davidosomething/"><img src={linkedin} alt="LinkedIn" /></OutboundLink>
+        </li>
+        <li>
+          <a href="/rss.xml"><img src={rss} alt="RSS feed for this site" /></a>
+        </li>
       </ul>
       <small>Copyright &copy; {year} David O'Trakoun</small>
     </div>

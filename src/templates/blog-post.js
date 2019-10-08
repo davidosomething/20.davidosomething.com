@@ -21,9 +21,9 @@ export default ({ data, location, pageContext }) => {
         <header style={{ marginBottom: rhythm(1) }}>
           <h1 style={{
             ...scale(5 / 4),
-            marginBottom: rhythm(0.5),
+            marginBottom: rhythm(0.2),
           }}>
-            <Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link>
+            <a href={post.frontmatter.slug}>{post.frontmatter.title}</a>
           </h1>
           <p className={classes.subheader}
             dangerouslySetInnerHTML={{
