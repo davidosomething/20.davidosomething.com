@@ -2,6 +2,7 @@ import React from 'react';
 import { scale } from '../utils/typography';
 import { Link } from 'gatsby';
 import Headroom from 'react-headroom';
+import avatar from '../../content/assets/avatar.png';
 import github from 'super-tiny-icons/images/svg/github.svg';
 import linkedin from 'super-tiny-icons/images/svg/linkedin.svg';
 import twitter from 'super-tiny-icons/images/svg/twitter.svg';
@@ -28,6 +29,7 @@ export default ({ location, title, children }) => [
     }}
   >
     <div className={classes.footerWrapper}>
+      <img className={classes.avatar} src={avatar} alt="" />
       <h2 style={{ ...scale(-1 / 4) }}>About me</h2>
       <p>
         I'm a web developer in New York City. I primarily work in JavaScript

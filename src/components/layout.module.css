@@ -51,6 +51,14 @@
   composes: wrapper;
   max-width: 28rem;
   padding: 3rem 1rem;
+  position: relative;
+}
+
+.avatar {
+  left: -60px;
+  margin-bottom: 0;
+  position: absolute;
+  top: 3.5em
 }
 
 .footer ul {
