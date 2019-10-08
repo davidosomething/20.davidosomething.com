@@ -5,6 +5,8 @@ module.exports = {
     description: `Computers and stuff`,
     siteUrl: `https://www.davidosomething.com/`,
     social: {
+      github: `davidosomething`,
+      linkedin: `davidosomething`,
       twitter: `davidosomething`,
     },
   },

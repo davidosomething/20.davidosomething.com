@@ -7,14 +7,14 @@ import { rhythm, scale } from "../utils/typography"
 import styles from '../styles/variables.css';
 
 export default ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
-
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout
+      location={location}
+      siteMetadata={data.site.siteMetadata}
+    >
       <SEO title="All posts" />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
+      {data.allMarkdownRemark.edges.map(({ node }) => {
+        const title = node.frontmatter.title || node.fields.slug;
         return (
           <article key={node.fields.slug} style={{ marginBottom: rhythm(1.5) }}>
             <header>
@@ -45,6 +45,12 @@ export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
+        author
+        social {
+          github
+          linkedin
+          twitter
+        }
         title
       }
     }
