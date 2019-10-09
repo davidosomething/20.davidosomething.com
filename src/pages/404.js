@@ -25,6 +25,12 @@ export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
+        author
+        social {
+          github
+          linkedin
+          twitter
+        }
         title
       }
     }
