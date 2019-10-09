@@ -37,6 +37,9 @@ const typography = new Typography({
       marginBottom: rhythm(1 / 2),
       marginTop: rhythm(1 / 2),
     },
+    h2: {
+      lineHeight: rhythm(1),
+    },
     h4: {
       color: styles.off1,
     },
@@ -50,25 +53,11 @@ const typography = new Typography({
     li: {
       marginBottom: rhythm(1 / 3),
     },
+    'code,pre': {
+      lineHeight: rhythm(2 / 3),
+    },
     '.citation': {
       ...scale(-1 / 3),
-    },
-    '.gatsby-highlight': {
-      marginBottom: rhythm(1),
-    },
-    'p ~ .gatsby-highlight': {
-      marginTop: rhythm(-0.5),
-    },
-    ':not(pre) > code[class*="language-"]': {
-      ...scale(-1 / 2),
-    },
-    '.gatsby-highlight > pre[class*="language-"]': {
-      padding: `${rhythm(0.2)} ${rhythm(0.5)}`,
-      lineHeight: 1.2,
-    },
-    '.gatsby-highlight > pre[class*="language-"] > code[class*="language-"]': {
-      ...scale(-2 / 3),
-      lineHeight: 'inherit',
     },
   }),
 })

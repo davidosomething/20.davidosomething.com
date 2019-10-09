@@ -1,10 +1,12 @@
 @value variables: '../styles/variables.css';
 @value background, invertedBackground, subBackground from variables;
+@value foreground from variables;
 @value border from variables;
 @value footerLink, footerLinkHover from variables;
 
 :global body {
   background: background;
+  color: foreground;
 }
 
 :global .headroom--pinned {
@@ -45,7 +47,6 @@
 
 .footer {
   background: subBackground;
-  margin-left: -30px;
 }
 
 .footerWrapper {
@@ -56,11 +57,22 @@
 }
 
 .avatar {
-  left: -60px;
-  margin-bottom: 0;
-  position: absolute;
-  top: 3.5em
+  display: block;
+  margin: 0 auto;
 }
+
+@media screen and (min-width: 640px) {
+  .footer {
+    margin-left: -30px;
+  }
+
+  .avatar {
+    left: -60px;
+    position: absolute;
+    top: 3.5em
+  }
+}
+
 
 .footer a {
   color: footerLink;

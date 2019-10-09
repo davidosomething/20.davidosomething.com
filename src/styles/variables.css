@@ -1,11 +1,12 @@
 @value background: #fcfcfc;
 @value subBackground: #faf8f6;
 @value invertedBackground: #222;
-@value border: #ccc;
+@value foreground: #210;
 @value off1: #677;
 @value off2: #dcc;
 @value off3: #edd;
 @value link: #26b;
+@value border: #ccc;
 @value linkHover: #48f;
 @value footerLink: #a22;
 @value footerLinkHover: #c44;

@@ -1,5 +1,5 @@
 @value variables: '../styles/variables.css';
-@value off1, off3 from variables;
+@value foreground, off1, off3 from variables;
 
 .subheader {
   margin-bottom: 0;
@@ -9,9 +9,11 @@
   color: off1;
 }
 
-.content > ul {
-  list-style-position: outside;
-  margin-left: 0;
+@media screen and (min-width: 786px) {
+  .content > ul {
+    list-style-position: outside;
+    margin-left: 0;
+  }
 }
 
 .content p + ul {
@@ -36,23 +38,50 @@
   text-align: right;
 }
 
-.content :not(pre) > code[class*="language-"] {
-  padding: 0.5em;
-}
-
-.content :global(.gatsby-highlight > pre[class*="language-"]) {
-  border-radius: 0.5em;
-  box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
-  padding: 1em 1.5em;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
 .postNavList {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   list-style: none;
   margin-left: 0;
   padding: 0;
+  position: relative;
+}
+
+.postNavList span {
+  flex: 1;
+}
+
+.postNavList a {
+  display: flex;
+  width: 100%;
+}
+
+.postNavList small {
+  color: foreground;
+  font-size: 0.5em;
+  margin-left: 1em;
+  text-transform: uppercase;
+  order: 1;
+}
+
+@media screen and (min-width: 480px) {
+  .postNavList {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .postNavList a {
+    flex-direction: column;
+  }
+
+  .postNavList small {
+    margin-left: 0;
+    order: 0;
+    line-height: 1;
+  }
+
+  .postNavList li:last-child small {
+    align-self: flex-end;
+  }
 }

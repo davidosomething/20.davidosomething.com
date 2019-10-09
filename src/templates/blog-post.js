@@ -26,7 +26,7 @@ export default ({ data, location, pageContext }) => {
             ...scale(5 / 4),
             marginBottom: rhythm(0.2),
           }}>
-            <a href={frontmatter.slug}>{frontmatter.title}</a>
+            <Link to={location.pathname}>{frontmatter.title}</Link>
           </h1>
           <p className={classes.subheader}
             dangerouslySetInnerHTML={{
@@ -55,7 +55,8 @@ export default ({ data, location, pageContext }) => {
                 to={previous.fields.slug}
                 rel="prev"
               >
-                ← {previous.frontmatter.title}
+                <small>Older</small>
+                <span>{previous.frontmatter.title}</span>
               </Link>
             )}
           </li>
@@ -66,7 +67,8 @@ export default ({ data, location, pageContext }) => {
                 to={next.fields.slug}
                 rel="next"
               >
-                {next.frontmatter.title} →
+                <small>Newer</small>
+                <span>{next.frontmatter.title}</span>
               </Link>
             )}
           </li>
