@@ -5290,6 +5290,14 @@ gatsby-page-utils@^0.0.24:
     micromatch "^3.1.10"
     slash "^3.0.0"
 
+gatsby-plugin-catch-links@^2.1.12:
+  version "2.1.12"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-2.1.12.tgz#aaf55c1387f6ee4e3afdc808879b9ff11fe57dc2"
+  integrity sha512-42BGcWaYNJ1fL702A2HZNsQyFL2+0FBdiJkBbizZyWRqhlo3+/YlcIqUCILICrrsCipyGdaR9RLnIlalBczRdg==
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    escape-string-regexp "^1.0.5"
+
 gatsby-plugin-feed@^2.3.15:
   version "2.3.15"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.3.15.tgz#06c6b0e96176485551ff83abb890184434009c18"
