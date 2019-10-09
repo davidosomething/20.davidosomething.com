@@ -33,10 +33,6 @@ const typography = new Typography({
   bodyWeight: 400,
   boldWeight: 700,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => ({
-    'h2,h3,h4,h5,h6': {
-      marginBottom: rhythm(1 / 2),
-      marginTop: rhythm(1 / 2),
-    },
     h2: {
       lineHeight: rhythm(1),
     },
