@@ -49,6 +49,9 @@ const typography = new Typography({
     li: {
       marginBottom: rhythm(1 / 3),
     },
+    'p + pre': {
+      marginTop: rhythm(-1 / 2),
+    },
     'code,pre': {
       lineHeight: rhythm(2 / 3),
     },
