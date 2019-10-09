@@ -1,5 +1,4 @@
 import Typography from "typography"
-import styles from '../styles/variables.css';
 
 const typography = new Typography({
   title: 'davidosomething-2020-mplus',
@@ -36,15 +35,8 @@ const typography = new Typography({
     h2: {
       lineHeight: rhythm(1),
     },
-    h4: {
-      color: styles.off1,
-    },
     a: {
-      color: styles.link,
       textDecoration: 'none',
-    },
-    'a:hover, a:active': {
-      color: styles.linkHover,
     },
     li: {
       marginBottom: rhythm(1 / 3),

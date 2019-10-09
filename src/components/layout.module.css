@@ -1,16 +1,31 @@
 @value variables: '../styles/variables.css';
 @value background, invertedBackground, subBackground from variables;
-@value foreground from variables;
+@value foreground, off1, link, linkHover from variables;
 @value border from variables;
 @value footerLink, footerLinkHover from variables;
 
-:global body {
-  background: background;
-  color: foreground;
-}
+:global {
+  body {
+    background: background;
+    color: foreground;
+  }
 
-:global .headroom--pinned {
-  box-shadow: 0 0 1px border;
+  .headroom--pinned {
+    box-shadow: 0 0 1px border;
+  }
+
+  h4 {
+    color: off1;
+  }
+
+  a {
+    color: link;
+  }
+
+  a:hover,
+  a:active {
+    color: linkHover;
+  }
 }
 
 .wrapper {
