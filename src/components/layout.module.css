@@ -4,28 +4,26 @@
 @value border from variables;
 @value footerLink, footerLinkHover from variables;
 
-:global {
-  body {
-    background: background;
-    color: foreground;
-  }
+:global body {
+  background: background;
+  color: foreground;
+}
 
-  .headroom--pinned {
-    box-shadow: 0 0 1px border;
-  }
+:global .headroom--pinned {
+  box-shadow: 0 0 1px border;
+}
 
-  h4 {
-    color: off1;
-  }
+:global h4 {
+  color: off1;
+}
 
-  a {
-    color: link;
-  }
+:global a {
+  color: link;
+}
 
-  a:hover,
-  a:active {
-    color: linkHover;
-  }
+:global a:hover,
+:global a:active {
+  color: linkHover;
 }
 
 .wrapper {
