@@ -7,31 +7,32 @@ import { rhythm, scale } from "../utils/typography"
 import styles from '../styles/variables.css';
 
 export default ({ data, location }) => {
+  const posts = data.allMarkdownRemark.edges;
   return (
     <Layout
       location={location}
       siteMetadata={data.site.siteMetadata}
     >
       <SEO title="All posts" />
-      {data.allMarkdownRemark.edges.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug;
+      {posts.map(({ node: post }) => {
+        const title = post.frontmatter.title || post.fields.slug;
         return (
-          <article key={node.fields.slug} style={{ marginBottom: rhythm(1.5) }}>
+          <article key={post.fields.slug} style={{ marginBottom: rhythm(1.5) }}>
             <header>
               <h2 style={{ marginBottom: rhythm(0.3) }}>
-                <Link to={node.fields.slug}>{title}</Link>
+                <Link to={post.fields.slug}>{title}</Link>
               </h2>
               <p
                 style={{ marginBottom: 0 }}
                 dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.subheader,
+                  __html: post.frontmatter.subheader,
                 }}
               />
               <small style={{
                 ...scale(-1 / 2),
                 color: styles.off1,
               }}>
-                Published on {node.frontmatter.datePublished}
+                Published on {post.frontmatter.datePublished}
               </small>
             </header>
           </article>

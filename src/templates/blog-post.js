@@ -8,14 +8,17 @@ import classes from './blog-post.module.css';
 
 export default ({ data, location, pageContext }) => {
   const post = data.markdownRemark;
-  const siteTitle = data.site.siteMetadata.title;
+  const { frontmatter } = post;
   const { previous, next } = pageContext;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout
+      location={location}
+      siteMetadata={data.site.siteMetadata}
+    >
       <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.subheader || post.excerpt}
+        title={frontmatter.title}
+        description={frontmatter.subheader || post.excerpt}
       />
       <article>
         <header style={{ marginBottom: rhythm(1) }}>
@@ -23,18 +26,18 @@ export default ({ data, location, pageContext }) => {
             ...scale(5 / 4),
             marginBottom: rhythm(0.2),
           }}>
-            <a href={post.frontmatter.slug}>{post.frontmatter.title}</a>
+            <a href={frontmatter.slug}>{frontmatter.title}</a>
           </h1>
           <p className={classes.subheader}
             dangerouslySetInnerHTML={{
-              __html: post.frontmatter.subheader,
+              __html: frontmatter.subheader,
             }}
           />
           <small
             className={classes.datePublished}
             style={{ ...scale(-1 / 2) }}
           >
-            Published on {post.frontmatter.datePublished}
+            Published on {frontmatter.datePublished}
           </small>
         </header>
         <section
@@ -77,8 +80,13 @@ export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
-        title
         author
+        social {
+          github
+          linkedin
+          twitter
+        }
+        title
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
