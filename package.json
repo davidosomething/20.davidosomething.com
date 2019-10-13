@@ -53,7 +53,7 @@
     "prismjs": "^1.17.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-headroom": "^2.2.8",
+    "react-headroom": "^3.0.0",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
     "super-tiny-icons": "^0.2.2",
