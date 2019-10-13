@@ -86,15 +86,6 @@
   }
 }
 
-
-.footer a {
-  color: footerLink;
-}
-
-.footer a:hover {
-  color: footerLinkHover;
-}
-
 .footer p {
   margin-bottom: 0.5em;
 }
@@ -111,10 +102,18 @@
   text-align: center;
 }
 
+.footer a {
+  color: footerLink;
+}
+
 .footer li a {
   position: relative;
   top: 0;
   transition: top 0.2s ease-out;
+}
+
+.footer a:hover {
+  color: footerLinkHover;
 }
 
 .footer li a:hover {
