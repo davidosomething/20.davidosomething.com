@@ -57,7 +57,8 @@
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
     "super-tiny-icons": "^0.2.2",
-    "typography": "^0.16.19"
+    "typography": "^0.16.19",
+    "typography-breakpoint-constants": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.18.2",

@@ -1,8 +1,12 @@
 import Typography from "typography"
+import {
+  MOBILE_MEDIA_QUERY,
+  TABLET_MEDIA_QUERY,
+} from "typography-breakpoint-constants"
 
 const typography = new Typography({
   title: 'davidosomething-2020-mplus',
-  baseFontSize: '18px',
+  baseFontSize: '24px',
   baseLineHeight: '1.8',
   scaleRatio: 1.8,
   googleFonts: [
@@ -49,6 +53,16 @@ const typography = new Typography({
     },
     '.citation': {
       ...scale(-1 / 3),
+    },
+    [MOBILE_MEDIA_QUERY]: {
+      html: {
+        ...adjustFontSizeTo('100%'),
+      },
+    },
+    [TABLET_MEDIA_QUERY]: {
+      html: {
+        ...adjustFontSizeTo('100%'),
+      },
     },
   }),
 })
