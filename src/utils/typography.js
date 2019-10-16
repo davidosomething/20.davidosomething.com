@@ -6,7 +6,7 @@ import {
 
 const typography = new Typography({
   title: 'davidosomething-2020-mplus',
-  baseFontSize: '24px',
+  baseFontSize: '22px',
   baseLineHeight: '1.8',
   scaleRatio: 1.8,
   googleFonts: [
@@ -39,6 +39,11 @@ const typography = new Typography({
     h2: {
       lineHeight: rhythm(1),
     },
+    '.post--title': {
+      ...scale(1.25),
+      marginBottom: rhythm(0.2),
+      wordBreak: 'keep-all',
+    },
     a: {
       textDecoration: 'none',
     },
@@ -58,6 +63,9 @@ const typography = new Typography({
       html: {
         ...adjustFontSizeTo('100%'),
       },
+      '.post--title': {
+        ...scale(0.5),
+      }
     },
     [TABLET_MEDIA_QUERY]: {
       html: {

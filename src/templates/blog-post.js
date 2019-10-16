@@ -22,10 +22,7 @@ export default ({ data, location, pageContext }) => {
       />
       <article>
         <header style={{ marginBottom: rhythm(1) }}>
-          <h1 style={{
-            ...scale(5 / 4),
-            marginBottom: rhythm(0.2),
-          }}>
+          <h1 className="post--title">
             <Link to={location.pathname}>{frontmatter.title}</Link>
           </h1>
           <p className={classes.subheader}
