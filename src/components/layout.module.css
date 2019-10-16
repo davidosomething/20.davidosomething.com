@@ -26,17 +26,33 @@
   color: linkHover;
 }
 
+.wrapper,
+.mainHeader {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper,
+  .mainHeader {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 .wrapper {
   margin-left: auto;
   margin-right: auto;
   max-width: 40rem;
-  padding: 0 2rem;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .mainHeader {
   composes: wrapper;
   background: background;
-  padding: 1rem 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .title {
@@ -49,7 +65,7 @@
 
 .mainWrapper {
   box-shadow: 0 1em 1em rgba(0,0,0,0.05);
-  margin-top: 4rem;
+  margin-top: 3rem;
   padding-bottom: 4rem;
   position: relative;
 }
@@ -58,7 +74,7 @@
   composes: wrapper;
 }
 
-.footer {
+:global .footer {
   background: subBackground;
 }
 
@@ -74,8 +90,8 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 640px) {
-  .footer {
+@media screen and (min-width: 768px) {
+  :global .footer {
     margin-left: -30px;
   }
 
@@ -87,46 +103,46 @@
 }
 
 
-.footer a {
+:global .footer a {
   color: footerLink;
 }
 
-.footer li a {
+:global .footer li a {
   position: relative;
   top: 0;
   transition: top 0.2s ease-out;
 }
 
-.footer a:hover {
+:global .footer a:hover {
   color: footerLinkHover;
 }
 
-.footer p {
+:global .footer p {
   margin-bottom: 0.5em;
 }
 
-.footer ul {
+:global .footer ul {
   display: flex;
   flex-direction: row;
   margin: 2em auto;
   list-style: none;
 }
 
-.footer li {
+:global .footer li {
   flex: 1 1;
   text-align: center;
 }
 
-.footer li a:hover {
+:global .footer li a:hover {
   top: -2px;
 }
 
-.footer li img {
+:global .footer li img {
   height: 2em;
   width: 2em;
 }
 
-.footer small {
+:global .footer small {
   display: block;
   text-align: center;
 }

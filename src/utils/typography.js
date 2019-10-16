@@ -59,6 +59,10 @@ const typography = new Typography({
     '.citation': {
       ...scale(-1 / 3),
     },
+    '.footer': {
+      ...scale(-1 / 4),
+      lineHeight: '1.5rem',
+    },
     [MOBILE_MEDIA_QUERY]: {
       html: {
         ...adjustFontSizeTo('100%'),

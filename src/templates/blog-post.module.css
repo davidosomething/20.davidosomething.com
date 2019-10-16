@@ -9,7 +9,7 @@
   color: off1;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 980px) {
   .content > ul {
     list-style-position: outside;
     margin-left: 0;

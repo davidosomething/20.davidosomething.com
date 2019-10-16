@@ -27,17 +27,10 @@ export default ({
           </h1>
         </header>
       </Headroom>
-      <div key="main" className={classes.mainWrapper}>
+      <div className={classes.mainWrapper}>
         <main className={classes.main}>{children}</main>
       </div>
-      <footer
-        key="footer"
-        className={classes.footer}
-        style={{
-          ...scale(-1 / 2),
-          lineHeight: '1.4rem',
-        }}
-      >
+      <footer className="footer">
         <div className={classes.footerWrapper}>
           <img className={classes.avatar} src={avatar} alt="" />
           <h2 style={{ ...scale(-1 / 4) }}>About me</h2>
