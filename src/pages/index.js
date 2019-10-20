@@ -1,18 +1,14 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import React from 'react'
+import { Link, graphql } from 'gatsby'
+import { Layout } from '../components/layout'
+import { SEO } from '../components/SEO'
+import { rhythm, scale } from '../utils/typography'
 import styles from '../styles/variables.css';
 
-export default ({ data, location }) => {
+export default ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
   return (
-    <Layout
-      location={location}
-      siteMetadata={data.site.siteMetadata}
-    >
+    <Layout title={data.site.siteMetadata.title}>
       <SEO title="All posts" />
       {posts.map(({ node: post }) => {
         const title = post.frontmatter.title || post.fields.slug;
@@ -46,12 +42,6 @@ export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
-        author
-        social {
-          github
-          linkedin
-          twitter
-        }
         title
       }
     }

@@ -1,21 +1,18 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm, scale } from '../utils/typography';
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import { Layout } from '../components/layout';
+import { SEO } from '../components/SEO';
 import classes from './blog-post.module.css';
 
 export default ({ data, location, pageContext }) => {
-  const post = data.markdownRemark;
+  const { site, markdownRemark: post } = data;
+  const { siteMetadata } = site;
   const { frontmatter } = post;
   const { previous, next } = pageContext;
 
   return (
-    <Layout
-      location={location}
-      siteMetadata={data.site.siteMetadata}
-    >
+    <Layout title={siteMetadata.title}>
       <SEO
         title={frontmatter.title}
         description={frontmatter.subheader || post.excerpt}
@@ -79,12 +76,6 @@ export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
-        author
-        social {
-          github
-          linkedin
-          twitter
-        }
         title
       }
     }
