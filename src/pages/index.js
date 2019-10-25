@@ -4,17 +4,19 @@ import { Layout } from '../components/layout'
 import { SEO } from '../components/SEO'
 import { PostItem } from '../components/PostItem';
 
-export default ({ data }) => {
-  const posts = data.allMarkdownRemark.edges;
-  return (
-    <Layout title={data.site.siteMetadata.title}>
-      <SEO title="All posts" />
-      {posts.map(({ node }) =>
-        <PostItem key={node.frontmatter.slug} post={node} />
-      )}
-    </Layout>
-  )
-};
+export default ({
+  data: {
+    site: { siteMetadata: { title } },
+    allMarkdownRemark: { edges: posts },
+  },
+}) => (
+  <Layout title={title}>
+    <SEO title="All posts" />
+    {posts.map(({ node }) =>
+      <PostItem key={node.fields.slug} post={node} />
+    )}
+  </Layout>
+);
 
 export const pageQuery = graphql`
   query {
