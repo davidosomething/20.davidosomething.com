@@ -1,13 +1,13 @@
 import { scale } from '../utils/typography';
 import PropTypes from 'prop-types';
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import Headroom from 'react-headroom';
 import { Footer } from './Footer';
 import classes from './layout.module.css';
 
 export const Layout = ({ title, children }) => (
-  <Fragment>
+  <div className="everything">
     <Headroom>
       <header className={classes.mainHeader}>
         <h1 className={classes.title} style={{ ...scale(1 / 3) }}>
@@ -19,7 +19,7 @@ export const Layout = ({ title, children }) => (
       <main className={classes.main}>{children}</main>
     </div>
     <Footer />
-  </Fragment>
+  </div>
 );
 Layout.propTypes = {
   title: PropTypes.string.isRequired,
