@@ -34,7 +34,7 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <div className={classes.footerWrapper}>
-        <img className={classes.avatar} src={avatar} alt="" />
+        <img className={classes.avatar} src={avatar} alt="Avatar" />
         <h2 style={{ ...scale(-1 / 4) }}>About me</h2>
         <p>
           I'm a combination husband, father, and programmer in New York City.

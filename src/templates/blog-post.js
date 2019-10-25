@@ -19,7 +19,7 @@ export default ({ data, location, pageContext }) => {
       />
       <article>
         <header style={{ marginBottom: rhythm(1) }}>
-          <h1 className="post--title">
+          <h1 className="page--title">
             <Link to={location.pathname}>{frontmatter.title}</Link>
           </h1>
           <p className={classes.subheader}
@@ -80,7 +80,6 @@ export const pageQuery = graphql`
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
       excerpt(pruneLength: 160)
       html
       frontmatter {

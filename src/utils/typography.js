@@ -39,7 +39,7 @@ const typography = new Typography({
     h2: {
       lineHeight: rhythm(1),
     },
-    '.post--title': {
+    '.page--title': {
       ...scale(1.25),
       marginBottom: rhythm(0.2),
       wordBreak: 'keep-all',

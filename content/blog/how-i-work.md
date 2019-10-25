@@ -3,10 +3,11 @@ title: "How I Work (2014)"
 subheader: "The things I do for web projects."
 datePublished: 2014-06-11T21:35:24+00:00
 tags:
+  - uses
   - development
   - tooling
   - vagrant
-slug: how-i-work
+slug: how-i-work-2014
 ---
 
 Creating a website is just not as simple as it used to be. In order to do things
