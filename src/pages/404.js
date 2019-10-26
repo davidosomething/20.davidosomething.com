@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import Layout from '../components/layout';
-import SEO from '../components/SEO';
+import { Layout } from '../components/layout';
+import { SEO } from '../components/SEO';
 
 export default ({
   data: {

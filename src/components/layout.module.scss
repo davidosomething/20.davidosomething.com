@@ -2,6 +2,7 @@
 @import '../styles/mixins';
 
 body {
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background: $background;
   color: $foreground;
