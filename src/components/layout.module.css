@@ -8,6 +8,7 @@
   background: background;
   color: foreground;
   font-display: swap;
+  -webkit-font-smoothing: antialiased;
 }
 
 :global .everything {
