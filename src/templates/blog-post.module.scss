@@ -1,16 +1,15 @@
-@value variables: '../styles/variables.css';
-@value foreground, off1, off3 from variables;
+@import '../styles/variables';
 
 .subheader {
   margin-bottom: 0;
 }
 
 .datePublished {
-  color: off1;
+  color: $off1;
 }
 
-@media screen and (min-width: 980px) {
-  .content > ul {
+.content > ul {
+  @media screen and (min-width: 980px) {
     list-style-position: outside;
     margin-left: 0;
   }
@@ -21,19 +20,19 @@
 }
 
 .content p > img {
+  box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
   display: block;
   margin: 1em auto;
-  box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
 }
 
 .content blockquote p {
-  box-sizing: border-box;
   border-left: 0.5em off3 solid;
+  box-sizing: border-box;
   padding-left: 0.5em;
 }
 
 .content :global(.citation) {
-  color: off1;
+  color: $off1;
   margin-top: -1em;
   text-align: right;
 }
@@ -46,6 +45,11 @@
   margin-left: 0;
   padding: 0;
   position: relative;
+
+  @media screen and (min-width: 480px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .postNavList span {
@@ -55,33 +59,28 @@
 .postNavList a {
   display: flex;
   width: 100%;
+
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+  }
 }
 
 .postNavList small {
-  color: foreground;
+  color: $foreground;
   font-size: 0.5em;
   margin-left: 1em;
-  text-transform: uppercase;
   order: 1;
-}
+  text-transform: uppercase;
 
-@media screen and (min-width: 480px) {
-  .postNavList {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .postNavList a {
-    flex-direction: column;
-  }
-
-  .postNavList small {
+  @media screen and (min-width: 480px) {
+    line-height: 1;
     margin-left: 0;
     order: 0;
-    line-height: 1;
   }
+}
 
-  .postNavList li:last-child small {
+.postNavList li:last-child small {
+  @media screen and (min-width: 480px) {
     align-self: flex-end;
   }
 }

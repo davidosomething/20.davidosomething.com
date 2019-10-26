@@ -1,0 +1,60 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background: $background;
+  color: $foreground;
+  font-display: swap;
+}
+
+.everything {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+:global(.headroom--pinned) {
+  box-shadow: 0 0 1px $border;
+}
+
+h4 {
+  color: $off1;
+}
+
+a {
+  color: $link;
+}
+
+a:hover,
+a:active {
+  color: $linkHover;
+}
+
+.mainHeader {
+  @include wrapper;
+  background: $background;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.title {
+  margin: 0;
+}
+
+.homeLink {
+  color: inherit;
+}
+
+.mainWrapper {
+  box-shadow: 0 1em 1em rgba(0,0,0,0.05);
+  flex-grow: 1;
+  margin-top: 3rem;
+  padding-bottom: 4rem;
+  position: relative;
+}
+
+.main {
+  @include wrapper;
+}
+

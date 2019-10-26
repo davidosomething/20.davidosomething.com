@@ -7,7 +7,7 @@ import github from 'super-tiny-icons/images/svg/github.svg';
 import linkedin from 'super-tiny-icons/images/svg/linkedin.svg';
 import twitter from 'super-tiny-icons/images/svg/twitter.svg';
 import rss from 'super-tiny-icons/images/svg/rss.svg';
-import classes from './layout.module.css';
+import classes from './footer.module.scss';
 
 const year = (new Date()).getFullYear();
 
@@ -32,7 +32,10 @@ export const Footer = () => {
   const { author, social } = site.siteMetadata;
 
   return (
-    <footer className="footer">
+    <footer className={classes.footer} style={{
+      ...scale(-1 / 4),
+      lineHeight: '1.5rem',
+    }}>
       <div className={classes.footerWrapper}>
         <img className={classes.avatar} src={avatar} alt="Avatar" />
         <h2 style={{ ...scale(-1 / 4) }}>About me</h2>

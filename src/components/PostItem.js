@@ -1,7 +1,7 @@
 import { rhythm, scale } from '../utils/typography';
 import React from 'react';
 import { Link } from 'gatsby';
-import styles from '../styles/variables.css';
+import styles from '../styles/variables.scss';
 
 export const PostItem = ({
   post: {

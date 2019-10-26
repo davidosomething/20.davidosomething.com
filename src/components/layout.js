@@ -4,10 +4,10 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Headroom from 'react-headroom';
 import { Footer } from './Footer';
-import classes from './layout.module.css';
+import classes from './layout.module.scss';
 
 export const Layout = ({ title, children }) => (
-  <div className="everything">
+  <div className={classes.everything}>
     <Headroom>
       <header className={classes.mainHeader}>
         <h1 className={classes.title} style={{ ...scale(1 / 3) }}>

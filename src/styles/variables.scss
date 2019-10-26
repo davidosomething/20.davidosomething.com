@@ -1,0 +1,29 @@
+$readableLineCharacterWidth: 40rem;
+$background: #fcfcfc;
+$subBackground: #faf8f6;
+$invertedBackground: #222;
+$foreground: #210;
+$off1: #677;
+$off2: #dcc;
+$off3: #edd;
+$link: #26b;
+$border: #ccc;
+$linkHover: #48f;
+$footerLink: #a22;
+$footerLinkHover: #c44;
+
+:export {
+  background: $background;
+  border: $border;
+  footerLink: $footerLink;
+  footerLinkHover: $footerLinkHover;
+  foreground: $foreground;
+  invertedBackground: $invertedBackground;
+  link: $link;
+  linkHover: $linkHover;
+  off1: $off1;
+  off2: $off2;
+  off3: $off3;
+  readableLineCharacterWidth: $readableLineCharacterWidth;
+  subBackground: $subBackground;
+}

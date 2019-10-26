@@ -1,8 +1,8 @@
-import Typography from "typography"
+import Typography from 'typography';
 import {
   MOBILE_MEDIA_QUERY,
-  TABLET_MEDIA_QUERY,
-} from "typography-breakpoint-constants"
+  DEFAULT_MEDIA_QUERY,
+} from 'typography-breakpoint-constants';
 
 const typography = new Typography({
   title: 'davidosomething-2020-mplus',
@@ -59,19 +59,12 @@ const typography = new Typography({
     '.citation': {
       ...scale(-1 / 3),
     },
-    '.footer': {
-      ...scale(-1 / 4),
-      lineHeight: '1.5rem',
-    },
     [MOBILE_MEDIA_QUERY]: {
-      html: {
-        ...adjustFontSizeTo('100%'),
-      },
       '.post--title': {
         ...scale(0.5),
       }
     },
-    [TABLET_MEDIA_QUERY]: {
+    [DEFAULT_MEDIA_QUERY]: {
       html: {
         ...adjustFontSizeTo('100%'),
       },

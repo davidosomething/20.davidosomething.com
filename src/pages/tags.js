@@ -3,7 +3,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { Layout } from '../components/layout';
 import { SEO } from '../components/SEO';
-import classes from './tags.module.css';
+import classes from './tags.module.scss';
 
 export default ({
   data: {
