@@ -2,7 +2,7 @@ import { rhythm } from '../utils/typography';
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { Layout } from '../components/layout';
-import { SEO } from '../components/SEO';
+import { SEO } from '../components/seo';
 import { PostItem } from '../components/PostItem';
 
 export default ({ data, location, pageContext }) => {
