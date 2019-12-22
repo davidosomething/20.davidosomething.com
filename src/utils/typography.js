@@ -36,6 +36,9 @@ const typography = new Typography({
   bodyWeight: 400,
   boldWeight: 700,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => ({
+    'h1 a, h2 a, h3 a': {
+      textDecoration: 'none',
+    },
     h2: {
       lineHeight: rhythm(1),
     },
@@ -46,6 +49,11 @@ const typography = new Typography({
     },
     a: {
       textDecoration: 'none',
+    },
+    'article section a': {
+      textDecoration: 'underline',
+      textDecorationSkip: 'ink',
+      textUnderlinePosition: 'under',
     },
     li: {
       marginBottom: rhythm(1 / 3),
