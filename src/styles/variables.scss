@@ -1,5 +1,6 @@
 $readableLineCharacterWidth: 40rem;
 $background: #fcfcfc;
+$altBackground: #eee;
 $subBackground: #faf8f6;
 $invertedBackground: #222;
 $foreground: #210;
@@ -13,6 +14,7 @@ $footerLink: #a22;
 $footerLinkHover: #c44;
 
 :export {
+  altBackground: $altBackground;
   background: $background;
   border: $border;
   footerLink: $footerLink;

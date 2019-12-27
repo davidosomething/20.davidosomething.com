@@ -32,6 +32,17 @@ a:active {
   color: $linkHover;
 }
 
+details {
+  background: $altBackground;
+  overflow: hidden;
+  padding: 1rem 1rem 0;
+}
+
+summary {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
 .mainHeader {
   @include wrapper;
   background: $background;
