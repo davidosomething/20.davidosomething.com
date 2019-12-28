@@ -61,7 +61,8 @@
     "react-typography": "^0.16.19",
     "super-tiny-icons": "^0.3.1",
     "typography": "^0.16.19",
-    "typography-breakpoint-constants": "^0.16.19"
+    "typography-breakpoint-constants": "^0.16.19",
+    "with-utterances": "^1.5.0"
   },
   "devDependencies": {
     "prettier": "^1.19.1",
