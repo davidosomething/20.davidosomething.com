@@ -9,15 +9,12 @@ import twitter from 'super-tiny-icons/images/svg/twitter.svg';
 import rss from 'super-tiny-icons/images/svg/rss.svg';
 import classes from './footer.module.scss';
 
-const year = (new Date()).getFullYear();
-
 export const Footer = () => {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            author
             social {
               github
               linkedin
@@ -29,7 +26,7 @@ export const Footer = () => {
     `
   );
 
-  const { author, social } = site.siteMetadata;
+  const { social } = site.siteMetadata;
 
   return (
     <footer className={classes.footer} style={{
