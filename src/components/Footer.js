@@ -74,7 +74,6 @@ export const Footer = () => {
             <a href="/rss.xml"><img src={rss} alt="RSS feed for this site" /></a>
           </li>
         </ul>
-        <small>Copyright &copy; {year} {author}</small>
       </div>
     </footer>
   );
