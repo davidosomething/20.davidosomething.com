@@ -1,6 +1,6 @@
 # davidosomething.com 2020 revision
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fc82f897-4264-4e0c-89f6-6cba471e08a2/deploy-status)](https://app.netlify.com/sites/nifty-aryabhata-c1bf99/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fc82f897-4264-4e0c-89f6-6cba471e08a2/deploy-status)](https://app.netlify.com/sites/nifty-aryabhata-c1bf99/deploys) [![Greenkeeper badge](https://badges.greenkeeper.io/davidosomething/20.davidosomething.com.svg)](https://greenkeeper.io/)
 
 - gatsby stack
 - typography.js
