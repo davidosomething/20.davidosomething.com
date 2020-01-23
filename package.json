@@ -31,12 +31,12 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
-    "gatsby": "2.19.1",
+    "gatsby": "2.19.3",
     "gatsby-image": "2.2.39",
     "gatsby-plugin-catch-links": "2.1.24",
     "gatsby-plugin-feed": "2.3.26",
     "gatsby-plugin-gtag": "1.0.12",
-    "gatsby-plugin-manifest": "2.2.37",
+    "gatsby-plugin-manifest": "2.2.38",
     "gatsby-plugin-offline": "3.0.32",
     "gatsby-plugin-preconnect": "1.0.5",
     "gatsby-plugin-react-helmet": "3.1.21",
