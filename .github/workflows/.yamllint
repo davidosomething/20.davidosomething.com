@@ -1,0 +1,7 @@
+---
+extends: default
+rules:
+  comments:
+    require-starting-space: true
+    truthy: false
+  document-start: disable
