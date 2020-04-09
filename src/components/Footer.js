@@ -1,7 +1,6 @@
 import { scale } from '../utils/typography';
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { OutboundLink } from 'gatsby-plugin-gtag';
 import avatar from '../../content/assets/avatar.png';
 import github from 'super-tiny-icons/images/svg/github.svg';
 import linkedin from 'super-tiny-icons/images/svg/linkedin.svg';
@@ -53,19 +52,19 @@ export const Footer = () => {
         </p>
         <ul>
           <li>
-            <OutboundLink href={`https://twitter.com/${social.twitter}`}>
+            <a href={`https://twitter.com/${social.twitter}`}>
               <img src={twitter} alt={`@${social.twitter} on Twitter`} />
-            </OutboundLink>
+            </a>
           </li>
           <li>
-            <OutboundLink href={`https://github.com/${social.github}`}>
+            <a href={`https://github.com/${social.github}`}>
               <img src={github} alt={`${social.github} on GitHub`} />
-            </OutboundLink>
+            </a>
           </li>
           <li>
-            <OutboundLink href={`https://www.linkedin.com/in/${social.linkedin}`}>
+            <a href={`https://www.linkedin.com/in/${social.linkedin}`}>
               <img src={linkedin} alt="LinkedIn" />
-            </OutboundLink>
+            </a>
           </li>
           <li>
             <a href="/rss.xml"><img src={rss} alt="RSS feed for this site" /></a>

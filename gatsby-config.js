@@ -124,7 +124,6 @@ module.exports = {
       options: {
         domains: [
           "https://fonts.googleapis.com",
-          "https://www.google-analytics.com"
         ]
       }
     },
@@ -142,11 +141,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-catch-links`,
-    {
-      resolve: `gatsby-plugin-gtag`,
-      options: {
-        trackingId: 'UA-9710641-1',
-      },
-    },
   ],
 }
