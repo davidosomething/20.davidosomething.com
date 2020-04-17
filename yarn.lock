@@ -6093,10 +6093,10 @@ gatsby-plugin-page-creator@^2.2.1:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-preconnect@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-preconnect/-/gatsby-plugin-preconnect-1.1.1.tgz#162a09736c9fd3f0756240b767856eb5f64394a9"
-  integrity sha512-YjR2da7nKvg7A2rDihx/VZAqQBHmQYvLhS4zVeOATEjbtU3cs4I2MSJ41SJiGHp1hJHcVBk96VeQiqNxUKMk4w==
+gatsby-plugin-preconnect@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-preconnect/-/gatsby-plugin-preconnect-1.1.2.tgz#5de47d0b075c7c2f6eadb00be1d7e4f2c43b1a4e"
+  integrity sha512-KSyd9ODnX5nNyup68P2182yrhVyhJoXIpeBrqLeRJHf6Ahfu7Pz76NIJrqy+4U2lqA8FUvvLg06NhceaNz2ZNw==
   dependencies:
     "@babel/runtime" "^7.4.3"
 
