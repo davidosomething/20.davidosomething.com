@@ -14,29 +14,6 @@ and 40% moving elements around until everything fits together. Here are some
 tips I’ve learned from years of experience and trying to find new techniques in
 those tutorials the web has too many of.
 
-### Contents
-
-1. [Photoshop Techniques](#tffpthc_1)
-    1. [Save for Web](#tffpthc_2)
-    1. [Convert to Smart Object](#tffpthc_3)
-    1. [Selecting Layers](#tffpthc_4)
-    1. [Copy merged](#tffpthc_5)
-    1. [Slicing’s other use](#tffpthc_6)
-    1. [Actions](#tffpthc_7)
-    1. [Text](#tffpthc_8)
-    1. [Flattened Versions](#tffpthc_9)
-1. [Creating the HTML and CSS](#tffpthc_10)
-    1. [Frameworks and Resets](#tffpthc_11)
-    1. [Quickly get Image Dimensions](#tffpthc_12)
-1. [Design in Firefox](#tffpthc_13)
-    1. [HTML Validator](#tffpthc_14)
-    1. [Web Developer](#tffpthc_15)
-    1. [Computed Sizes with Firebug](#tffpthc_16)
-    1. [In Place CSS Editing with Firebug and the Arrow Keys](#tffpthc_17)
-    1. [Pixel Perfect and Inverted Overlays](#tffpthc_18)
-1. [Closing](#tffpthc_19)
-1. [References](#tffpthc_20)
-
 ### Photoshop Techniques
 
 I usually start a conversion by preparing the assets. Working with the design
