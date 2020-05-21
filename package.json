@@ -39,7 +39,7 @@
     "gatsby-plugin-manifest": "2.4.3",
     "gatsby-plugin-offline": "3.2.2",
     "gatsby-plugin-preconnect": "1.1.44",
-    "gatsby-plugin-react-helmet": "3.3.1",
+    "gatsby-plugin-react-helmet": "3.3.2",
     "gatsby-plugin-react-helmet-canonical-urls": "1.4.0",
     "gatsby-plugin-sass": "2.3.1",
     "gatsby-plugin-sharp": "2.6.3",
@@ -58,12 +58,11 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-headroom": "3.0.0",
-    "react-helmet": "5.2.1",
+    "react-helmet": "6.0.0",
     "react-typography": "0.16.19",
     "super-tiny-icons": "0.3.2",
     "typography": "0.16.19",
-    "typography-breakpoint-constants": "0.16.19",
-    "with-utterances": "1.5.0"
+    "typography-breakpoint-constants": "0.16.19"
   },
   "devDependencies": {
     "prettier": "2.0.5",
