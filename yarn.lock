@@ -1023,7 +1023,7 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.4.3", "@babel/runtime@^7.7.2":
+"@babel/runtime@^7.7.2":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.8.3.tgz#0811944f73a6c926bb2ad35e918dcc1bfab279f1"
   integrity sha512-fVHx1rzEmwB130VTkLnxR+HmxcTjGzH12LYQcFFoBwakMd3aOMD4OsRN7tGG/UOYE2ektgFrS8uACAoRk1CY0w==
@@ -6409,13 +6409,6 @@ gatsby-plugin-page-creator@^2.3.6:
     glob "^7.1.6"
     lodash "^4.17.15"
     micromatch "^3.1.10"
-
-gatsby-plugin-preconnect@1.1.46:
-  version "1.1.46"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-preconnect/-/gatsby-plugin-preconnect-1.1.46.tgz#af587cf80c47649302a4b4486933a92f464d034e"
-  integrity sha512-L84l79tLtxOAOSDoMR7s/BVuFFqeBOqruWmT30hTLTtAvPt+8x3iZuMlHY9HXtQIwaHu3OPix0qjVeTx4qoIWQ==
-  dependencies:
-    "@babel/runtime" "^7.4.3"
 
 gatsby-plugin-react-helmet-canonical-urls@1.4.0:
   version "1.4.0"
@@ -14858,6 +14851,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typeface-lexend-deca@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/typeface-lexend-deca/-/typeface-lexend-deca-1.1.3.tgz#4fb065fd334eb515c29be7d43fa7cf772206915c"
+  integrity sha512-TScdu/BznMTvNkviPQ2ZH/28sDnizcQ7ZWtyB/GTfAXC9gN7iSSfE0T3o8pXugVeC8rUJlo9osuemPnuWeyBUg==
 
 typography-breakpoint-constants@0.16.19:
   version "0.16.19"

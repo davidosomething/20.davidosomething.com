@@ -9,26 +9,7 @@ const typography = new Typography({
   baseFontSize: '22px',
   baseLineHeight: '1.8',
   scaleRatio: 1.8,
-  googleFonts: [
-    {
-      name: 'Lexend Deca',
-      styles: [
-        '400',
-      ],
-    },
-    // {
-    //   name: 'M PLUS 1p',
-    //   styles: [
-    //     //'100', // thin
-    //     //'300', // light
-    //     '400', // regular
-    //     //'500', // medium
-    //     //'700', // bold
-    //     //'800', // extra-bold
-    //     //'900', // black
-    //   ],
-    // }
-  ],
+  omitGoogleFont: true,
   headerFontFamily: [ 'Lexend Deca', 'sans-serif' ],
   headerWeight: 700,
   //blockMarginBottom: 2 / 3,
