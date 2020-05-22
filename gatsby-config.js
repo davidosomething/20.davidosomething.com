@@ -48,6 +48,12 @@ module.exports = {
           `gatsby-remark-smartypants`,
           {
             resolve: `gatsby-remark-vscode`,
+            options: {
+              languageAliases: {
+                apache: 'xml',
+                vim: 'ignore',
+              }
+            },
           },
         ],
       },
