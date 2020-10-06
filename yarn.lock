@@ -16350,10 +16350,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-lexend-deca@1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/typeface-lexend-deca/-/typeface-lexend-deca-1.1.3.tgz#4fb065fd334eb515c29be7d43fa7cf772206915c"
-  integrity sha512-TScdu/BznMTvNkviPQ2ZH/28sDnizcQ7ZWtyB/GTfAXC9gN7iSSfE0T3o8pXugVeC8rUJlo9osuemPnuWeyBUg==
+typeface-lexend-deca@1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-lexend-deca/-/typeface-lexend-deca-1.1.13.tgz#88b105c18f5d44db79354ed1696600e444776088"
+  integrity sha512-dyQb+lgZ8DHwsAUDPHEnuCYdTcHcVpaY7b3EUoIFQh4BUHKakytVIJ2PvdRK/VUTaNKNFKE06Dj4Cj0hcXwzfw==
 
 typography-breakpoint-constants@0.16.19:
   version "0.16.19"
