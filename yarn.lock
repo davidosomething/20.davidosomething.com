@@ -15727,10 +15727,10 @@ sugarss@^2.0.0:
   dependencies:
     postcss "^7.0.2"
 
-super-tiny-icons@0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/super-tiny-icons/-/super-tiny-icons-0.3.2.tgz#dfcb56265b3a3b04b26c7f9b462ba11c6ab58eb8"
-  integrity sha512-+cYkdElhyJbNBNDMyXUdsh7BlgywqKjkBUylxgMYWmJawvBGxD29f3rpueMcj2RHoSrdJzHwsDFJciWxcTeR4Q==
+super-tiny-icons@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/super-tiny-icons/-/super-tiny-icons-0.4.0.tgz#ec925cad4d788d98e50fd4229c3f2bf51abeba27"
+  integrity sha512-PEHlUQsSdEtQNeP4pNOBCDU9cJe6bsrMmG3yV62icvMDgjCC+srl9AfJ5RGwfKbyvGNbYRUtcmkka+k7yhZxOA==
   dependencies:
     opencollective-postinstall "^2.0.2"
 
