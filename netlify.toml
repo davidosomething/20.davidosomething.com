@@ -14,7 +14,7 @@ package = "netlify-plugin-no-more-404"
   on404 = "error"
 
   # change this key to a new one any time you need to restart from scratch
-  cacheKey = "2020-04-23 00:05:12-0400"
+  cacheKey = "2021-03-02 11:35:04-0500"
 
   # (for development) turn true for extra diagnostic logging
   debugMode = false
