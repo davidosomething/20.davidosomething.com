@@ -3,7 +3,12 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { Layout } from '../components/layout';
 import { SEO } from '../components/seo';
-import classes from './blog-post.module.scss';
+import {
+  content,
+  datePublished,
+  postNavList,
+  subheader,
+} from './blog-post.module.scss';
 
 const Article = ({ location, frontmatter, post }) => (
   <article>
@@ -11,20 +16,20 @@ const Article = ({ location, frontmatter, post }) => (
       <h1 className="page--title">
         <Link to={location.pathname}>{frontmatter.title}</Link>
       </h1>
-      <p className={classes.subheader}
+      <p className={subheader}
         dangerouslySetInnerHTML={{
           __html: frontmatter.subheader,
         }}
       />
       <small
-        className={classes.datePublished}
+        className={datePublished}
         style={{ ...scale(-1 / 2) }}
       >
         Published on {frontmatter.datePublished}
       </small>
     </header>
     <section
-      className={classes.content}
+      className={content}
       dangerouslySetInnerHTML={{ __html: post.html }}
     />
   </article>
@@ -45,7 +50,7 @@ export default ({ data, location, pageContext }) => {
       <Article location={location} frontmatter={frontmatter} post={post} />
       <hr style={{ marginBottom: rhythm(1) }} />
       <nav>
-        <ul className={classes.postNavList}>
+        <ul className={postNavList}>
           <li>
             {previous && (
               <Link

@@ -4,19 +4,27 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Headroom from 'react-headroom';
 import { Footer } from './Footer';
-import classes from './layout.module.scss';
+
+import {
+  everything,
+  mainHeader,
+  title as titleClassName,
+  homeLink,
+  main,
+  mainWrapper,
+} from './layout.module.scss';
 
 export const Layout = ({ title, children }) => (
-  <div className={classes.everything}>
+  <div className={everything}>
     <Headroom>
-      <header className={classes.mainHeader}>
-        <h1 className={classes.title} style={{ ...scale(1 / 3) }}>
-          <Link to={`/`} className={classes.homeLink}>{title}</Link>
+      <header className={mainHeader}>
+        <h1 className={titleClassName} style={{ ...scale(1 / 3) }}>
+          <Link to={`/`} className={homeLink}>{title}</Link>
         </h1>
       </header>
     </Headroom>
-    <div className={classes.mainWrapper}>
-      <main className={classes.main}>{children}</main>
+    <div className={mainWrapper}>
+      <main className={main}>{children}</main>
     </div>
     <Footer />
   </div>

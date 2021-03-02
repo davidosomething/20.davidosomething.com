@@ -3,7 +3,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { Layout } from '../components/layout';
 import { SEO } from '../components/seo';
-import classes from './tags.module.scss';
+import { tagsList } from './tags.module.scss';
 
 export default ({
   data: {
@@ -17,7 +17,7 @@ export default ({
     <h1 className="page--title">
       <Link to={location.pathname}>Tags</Link>
     </h1>
-    <ul className={classes.tagsList}>
+    <ul className={tagsList}>
       {tags.map((tag) => (
         <li key={tag.fieldValue}>
           <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>

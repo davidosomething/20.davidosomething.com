@@ -6,7 +6,11 @@ import github from 'super-tiny-icons/images/svg/github.svg';
 import linkedin from 'super-tiny-icons/images/svg/linkedin.svg';
 import twitter from 'super-tiny-icons/images/svg/twitter.svg';
 import rss from 'super-tiny-icons/images/svg/rss.svg';
-import classes from './footer.module.scss';
+import {
+  footerWrapper,
+  footer,
+  avatar as avatarClassName
+} from './footer.module.scss';
 
 export const Footer = () => {
   const { site } = useStaticQuery(
@@ -28,12 +32,12 @@ export const Footer = () => {
   const { social } = site.siteMetadata;
 
   return (
-    <footer className={classes.footer} style={{
+    <footer className={footer} style={{
       ...scale(-1 / 4),
       lineHeight: '1.5rem',
     }}>
-      <div className={classes.footerWrapper}>
-        <img className={classes.avatar} src={avatar} alt="Avatar" />
+      <div className={footerWrapper}>
+        <img className={avatarClassName} src={avatar} alt="Avatar" />
         <h2 style={{ ...scale(-1 / 4) }}>About me</h2>
         <p>
           I'm a combination husband, father, and programmer in New York City.
