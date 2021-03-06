@@ -1,7 +1,7 @@
 import { rhythm, scale } from '../utils/typography';
 import React from 'react';
 import { Link } from 'gatsby';
-import styles from '../styles/variables.scss';
+import { off1 } from '../styles/variables.scss';
 
 export const PostItem = ({
   post: {
@@ -28,7 +28,7 @@ export const PostItem = ({
       />
       <small style={{
         ...scale(-1 / 2),
-        color: styles.off1,
+        color: off1,
       }}>
         Published on {datePublished}
       </small>
