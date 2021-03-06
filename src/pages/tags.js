@@ -5,7 +5,7 @@ import { Layout } from '../components/layout';
 import { SEO } from '../components/seo';
 import { tagsList } from './tags.module.scss';
 
-export default ({
+const TagsPage = ({
   data: {
     allMarkdownRemark: { group: tags },
     site: { siteMetadata: { title } },
@@ -28,6 +28,8 @@ export default ({
     </ul>
   </Layout>
 );
+
+export default TagsPage;
 
 export const pageQuery = graphql`
   query {

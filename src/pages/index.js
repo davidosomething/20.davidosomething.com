@@ -4,7 +4,7 @@ import { Layout } from '../components/layout';
 import { SEO } from '../components/seo';
 import { PostItem } from '../components/PostItem';
 
-export default ({
+const IndexPage = ({
   data: {
     site: { siteMetadata: { title } },
     allMarkdownRemark: { edges: posts },
@@ -17,6 +17,8 @@ export default ({
     )}
   </Layout>
 );
+
+export default IndexPage;
 
 export const pageQuery = graphql`
   query {

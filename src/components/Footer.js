@@ -3,7 +3,6 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import avatar from '../../content/assets/avatar.png';
 import github from 'super-tiny-icons/images/svg/github.svg';
-import linkedin from 'super-tiny-icons/images/svg/linkedin.svg';
 import twitter from 'super-tiny-icons/images/svg/twitter.svg';
 import rss from 'super-tiny-icons/images/svg/rss.svg';
 import {
@@ -20,7 +19,6 @@ export const Footer = () => {
           siteMetadata {
             social {
               github
-              linkedin
               twitter
             }
           }
@@ -40,19 +38,16 @@ export const Footer = () => {
         <img className={avatarClassName} src={avatar} alt="Avatar" />
         <h2 style={{ ...scale(-1 / 4) }}>About me</h2>
         <p>
-          I'm a combination husband, father, and programmer in New York City.
-          I primarily work in JavaScript (node and React); sometimes I dive into
-          Java, PHP, Python, Bash, and Lua. I'm a Vim and GNU/Linux user and
-          enthusiast.
+          I'm a plant-waterer, dad, husband, dog-owner, and Vim and Linux
+          enthusiast in NYC.<br />
         </p>
         <p>
-          I am currently, a Senior Software Engineer at <a
+          Currently Senior Software Engineer at <a
           href="https://www.squarespace.com">Squarespace</a> (but this blog is
-          my own pet project). I worked at Elite Daily/Bustle, Time Inc., and
-          Arnold NYC/Worldwide in the past years.<br />
-          I also held a brief stint as an Adjunct Instructor at Boston
-          University CDIA, where I taught various web development and WordPress
-          courses.
+          my own pet project). Previously at Elite Daily/Bustle, Time Inc., and
+          Arnold NYC/Worldwide.<br />
+          I was also an Adjunct Instructor at Boston University CDIA, where
+          I taught various web development and WordPress courses.
         </p>
         <ul>
           <li>
@@ -63,11 +58,6 @@ export const Footer = () => {
           <li>
             <a href={`https://github.com/${social.github}`}>
               <img src={github} alt={`${social.github} on GitHub`} />
-            </a>
-          </li>
-          <li>
-            <a href={`https://www.linkedin.com/in/${social.linkedin}`}>
-              <img src={linkedin} alt="LinkedIn" />
             </a>
           </li>
           <li>

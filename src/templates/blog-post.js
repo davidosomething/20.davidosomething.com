@@ -35,7 +35,7 @@ const Article = ({ location, frontmatter, post }) => (
   </article>
 );
 
-export default ({ data, location, pageContext }) => {
+const BlogPost = ({ data, location, pageContext }) => {
   const { site, markdownRemark: post } = data;
   const { siteMetadata } = site;
   const { frontmatter } = post;
@@ -80,6 +80,8 @@ export default ({ data, location, pageContext }) => {
     </Layout>
   )
 };
+
+export default BlogPost;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {

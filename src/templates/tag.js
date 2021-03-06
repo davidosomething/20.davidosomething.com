@@ -5,7 +5,7 @@ import { Layout } from '../components/layout';
 import { SEO } from '../components/seo';
 import { PostItem } from '../components/PostItem';
 
-export default ({ data, location, pageContext }) => {
+const TagTemplate = ({ data, location, pageContext }) => {
   const { tag } = pageContext;
   const { edges, totalCount } = data.allMarkdownRemark;
   return (
@@ -19,7 +19,9 @@ export default ({ data, location, pageContext }) => {
       )}
     </Layout>
   )
-}
+};
+
+export default TagTemplate;
 
 export const pageQuery = graphql`
   query BlogPostsTags($tag: String) {
@@ -56,5 +58,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
-
+`;
