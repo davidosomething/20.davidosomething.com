@@ -42,6 +42,10 @@ const typography = new Typography({
     'p + pre': {
       marginTop: rhythm(-1 / 2),
     },
+    'p > small': {
+      display: 'block',
+      lineHeight: '1.5',
+    },
     'code,pre': {
       lineHeight: rhythm(2 / 3),
     },
