@@ -2,7 +2,7 @@ import { rhythm, scale } from '../utils/typography';
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { Layout } from '../components/layout';
-import { SEO } from '../components/seo';
+import { Seo } from '../components/seo';
 import {
   content,
   datePublished,
@@ -43,7 +43,7 @@ const BlogPost = ({ data, location, pageContext }) => {
 
   return (
     <Layout title={siteMetadata.title}>
-      <SEO
+      <Seo
         title={frontmatter.title}
         description={frontmatter.subheader || post.excerpt}
       />

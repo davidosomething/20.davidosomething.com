@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { Layout } from '../components/layout';
-import { SEO } from '../components/seo';
+import { Seo } from '../components/seo';
 import { PostItem } from '../components/PostItem';
 
 const IndexPage = ({
@@ -11,7 +11,7 @@ const IndexPage = ({
   },
 }) => (
   <Layout title={title}>
-    <SEO title="All posts" />
+    <Seo title="All posts" />
     {posts.map(({ node }) =>
       <PostItem key={node.fields.slug} post={node} />
     )}

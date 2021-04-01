@@ -2,7 +2,7 @@ import { rhythm } from '../utils/typography';
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { Layout } from '../components/layout';
-import { SEO } from '../components/seo';
+import { Seo } from '../components/seo';
 import { PostItem } from '../components/PostItem';
 
 const TagTemplate = ({ data, location, pageContext }) => {
@@ -10,7 +10,7 @@ const TagTemplate = ({ data, location, pageContext }) => {
   const { edges, totalCount } = data.allMarkdownRemark;
   return (
     <Layout title={data.site.siteMetadata.title}>
-      <SEO title={`Posts tagged "${tag}"`} />
+      <Seo title={`Posts tagged "${tag}"`} />
       <header style={{ marginBottom: rhythm(2) }}>
         <Link to={location.pathname}>Posts tagged "{tag}"</Link> ({totalCount})
       </header>

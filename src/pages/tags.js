@@ -2,7 +2,7 @@ import kebabCase from 'lodash/kebabCase';
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { Layout } from '../components/layout';
-import { SEO } from '../components/seo';
+import { Seo } from '../components/seo';
 import { tagsList } from './tags.module.scss';
 
 const TagsPage = ({
@@ -13,7 +13,7 @@ const TagsPage = ({
   location,
 }) => (
   <Layout title={title}>
-    <SEO title="Tags" />
+    <Seo title="Tags" />
     <h1 className="page--title">
       <Link to={location.pathname}>Tags</Link>
     </h1>
