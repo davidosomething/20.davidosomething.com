@@ -16,7 +16,49 @@ To get everything working again, I make some changes to my kernel mode settings
 and my xorg.conf. In <var>/boot/syslinux/syslinux.cfg</var> and
 <var>/etc/xorg.conf.d/20-nvidia.conf</var> I am now using this:
 
-<script src="https://gist.github.com/davidosomething/87171683d589981225a1.js"></script>
+- **20-nvidia.conf**
+
+    ```conf
+    Section "Monitor"
+        Identifier     "Monitor0"
+        VendorName     "Unknown"
+        ModelName      "Unknown"
+        HorizSync       28.0 - 33.0
+        VertRefresh     43.0 - 72.0
+        Option         "DPMS"
+    EndSection
+
+    Section "Device"
+      Identifier "Nvidia Card"
+      Driver "nvidia"
+      VendorName "NVIDIA Corporation"
+      BoardName "Quadro FX 880M:
+
+      #Option "NoLogo" "true"
+      Option "RegistryDwords" "EnableBrightnessControl=1"
+
+    EndSection
+
+    Section "Screen"
+        Identifier     "Screen0"
+        Device         "Device0"
+        Monitor        "Monitor0"
+        DefaultDepth    24
+        SubSection     "Display"
+            Depth       24
+        EndSubSection
+    EndSection
+    ```
+
+- **syslinux.cfg**
+
+    ```conf
+    LABEL archnvidia
+        MENU LABEL Arch Linux (NVidia)
+        LINUX ../vmlinuz-linux
+        APPEND root=/dev/sda1 rw nomodeset nouveau.modeset=0
+        INITRD ../initramfs-linux.img
+    ```
 
 And in the <var>syslinux.cfg</var> the line <code>DEFAULT arch</code> is now
 <code>DEFAULT archnvidia</code> to default to the new kernel settings.
