@@ -57,10 +57,10 @@
     "react-dom": "17.0.2",
     "react-headroom": "3.1.1",
     "react-helmet": "6.1.0",
-    "react-typography": "0.16.19",
+    "react-typography": "0.16.20",
     "super-tiny-icons": "0.4.0",
     "typeface-lexend-deca": "1.1.13",
-    "typography": "0.16.19",
+    "typography": "0.16.21",
     "typography-breakpoint-constants": "0.16.19"
   },
   "devDependencies": {
