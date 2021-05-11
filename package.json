@@ -33,8 +33,8 @@
   },
   "dependencies": {
     "gatsby": "3.5.0",
-    "gatsby-image": "3.4.0",
-    "gatsby-plugin-catch-links": "3.4.0",
+    "gatsby-image": "3.5.0",
+    "gatsby-plugin-catch-links": "3.5.0",
     "gatsby-plugin-feed": "3.5.0",
     "gatsby-plugin-manifest": "3.5.0",
     "gatsby-plugin-offline": "4.5.0",
