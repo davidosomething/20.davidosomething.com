@@ -68,6 +68,6 @@
     "sass": "1.49.7",
     "stylelint": "14.3.0",
     "stylelint-config-css-modules": "2.3.0",
-    "stylelint-config-recommended": "6.0.0"
+    "stylelint-config-recommended": "7.0.0"
   }
 }
