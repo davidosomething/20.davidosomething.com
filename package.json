@@ -67,7 +67,7 @@
     "prettier": "2.5.1",
     "sass": "1.49.7",
     "stylelint": "14.4.0",
-    "stylelint-config-css-modules": "2.3.0",
+    "stylelint-config-css-modules": "3.0.0",
     "stylelint-config-recommended": "7.0.0"
   }
 }
