@@ -32,7 +32,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
-    "gatsby": "4.11.2",
+    "gatsby": "4.11.3",
     "gatsby-image": "3.11.0",
     "gatsby-plugin-catch-links": "4.11.0",
     "gatsby-plugin-feed": "4.11.1",
