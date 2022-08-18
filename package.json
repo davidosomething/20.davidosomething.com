@@ -32,7 +32,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
-    "gatsby": "4.21.0",
+    "gatsby": "4.21.1",
     "gatsby-image": "3.11.0",
     "gatsby-plugin-catch-links": "4.21.0",
     "gatsby-plugin-feed": "4.21.0",
@@ -49,7 +49,7 @@
     "gatsby-remark-responsive-iframe": "5.21.0",
     "gatsby-remark-smartypants": "5.21.0",
     "gatsby-remark-vscode": "3.3.1",
-    "gatsby-source-filesystem": "4.21.0",
+    "gatsby-source-filesystem": "4.21.1",
     "gatsby-transformer-remark": "5.21.0",
     "gatsby-transformer-sharp": "4.21.0",
     "prismjs": "1.28.0",
