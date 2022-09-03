@@ -42,10 +42,9 @@ export const Footer = () => {
           enthusiast in NYC.<br />
         </p>
         <p>
-          Currently Senior Software Engineer at <a
-          href="https://www.squarespace.com">Squarespace</a> (but this blog is
-          my own pet project). Previously at Elite Daily/Bustle, Time Inc., and
-          Arnold NYC/Worldwide.<br />
+          Currently doing fintech.<br />
+          Formerly at Squarespace, Elite Daily/Bustle, Time Inc., and Arnold
+          NYC/Worldwide.<br />
           I was also an Adjunct Instructor at Boston University CDIA, where
           I taught various web development and WordPress courses.
         </p>
