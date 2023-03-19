@@ -12302,10 +12302,10 @@ sudo-prompt@^8.2.0:
   resolved "https://registry.yarnpkg.com/sudo-prompt/-/sudo-prompt-8.2.5.tgz#cc5ef3769a134bb94b24a631cc09628d4d53603e"
   integrity sha512-rlBo3HU/1zAJUrkY6jNxDOC9eVYliG6nS4JA8u8KAshITd07tafMc/Br7xQwCSseXwJ2iCcHCE8SNWX3q8Z+kw==
 
-super-tiny-icons@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/super-tiny-icons/-/super-tiny-icons-0.4.0.tgz#ec925cad4d788d98e50fd4229c3f2bf51abeba27"
-  integrity sha512-PEHlUQsSdEtQNeP4pNOBCDU9cJe6bsrMmG3yV62icvMDgjCC+srl9AfJ5RGwfKbyvGNbYRUtcmkka+k7yhZxOA==
+super-tiny-icons@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/super-tiny-icons/-/super-tiny-icons-0.5.0.tgz#c6bf9ec0414021edbc9b7a7dce1d0cf05396a3e4"
+  integrity sha512-TWwrGVNbUZgCmctVMOXchuscfqT0RdkGjh6N8v9Ww1irVfY+eRnC6VvoNu4Fo91m04w9uWByKYxuEjeroYLzsg==
   dependencies:
     opencollective-postinstall "^2.0.2"
 
