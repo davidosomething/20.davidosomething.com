@@ -60,7 +60,7 @@
     "react-typography": "0.16.23",
     "super-tiny-icons": "0.5.0",
     "typeface-lexend-deca": "1.1.13",
-    "typography": "0.16.21",
+    "typography": "0.16.24",
     "typography-breakpoint-constants": "0.16.19"
   },
   "devDependencies": {
