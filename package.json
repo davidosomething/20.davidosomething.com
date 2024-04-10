@@ -32,12 +32,12 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
-    "gatsby": "5.13.3",
+    "gatsby": "5.13.4",
     "gatsby-image": "3.11.0",
     "gatsby-plugin-catch-links": "5.13.1",
     "gatsby-plugin-feed": "5.13.1",
     "gatsby-plugin-manifest": "5.13.1",
-    "gatsby-plugin-offline": "6.13.1",
+    "gatsby-plugin-offline": "6.13.2",
     "gatsby-plugin-react-helmet": "6.13.1",
     "gatsby-plugin-react-helmet-canonical-urls": "1.4.0",
     "gatsby-plugin-sass": "6.13.1",
