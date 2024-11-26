@@ -64,7 +64,7 @@
     "typography-breakpoint-constants": "0.16.19"
   },
   "devDependencies": {
-    "prettier": "3.3.3",
+    "prettier": "3.4.0",
     "sass": "1.81.0",
     "stylelint": "16.10.0",
     "stylelint-config-css-modules": "4.4.0",
