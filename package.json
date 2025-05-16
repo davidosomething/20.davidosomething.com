@@ -65,7 +65,7 @@
   },
   "devDependencies": {
     "prettier": "3.5.3",
-    "sass": "1.88.0",
+    "sass": "1.89.0",
     "stylelint": "16.19.1",
     "stylelint-config-css-modules": "4.4.0",
     "stylelint-config-recommended": "16.0.0"
