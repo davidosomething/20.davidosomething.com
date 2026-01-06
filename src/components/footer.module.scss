@@ -1,8 +1,8 @@
-@import '../styles/variables';
-@import '../styles/mixins';
+@use '../styles/variables';
+@use '../styles/mixins';
 
 .footer {
-  background: $subBackground;
+  background: variables.$subBackground;
 
   @media screen and (min-width: 768px) {
     margin-left: -30px;
@@ -10,7 +10,7 @@
 }
 
 .footerWrapper {
-  @include wrapper;
+  @include mixins.wrapper;
   max-width: 28rem;
   padding: 3rem 1rem;
   position: relative;
@@ -34,7 +34,7 @@
   }
 
   a {
-    color: $footerLink;
+    color: variables.$footerLink;
   }
 
   li a {
@@ -44,7 +44,7 @@
   }
 
   a:hover {
-    color: $footerLinkHover;
+    color: variables.$footerLinkHover;
   }
 
   p {

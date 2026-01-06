@@ -1,11 +1,11 @@
-@import '../styles/variables';
+@use '../styles/variables';
 
 .subheader {
   margin-bottom: 0;
 }
 
 .datePublished {
-  color: $off1;
+  color: variables.$off1;
 }
 
 .content > ul {
@@ -32,7 +32,7 @@
 }
 
 .content :global(.citation) {
-  color: $off1;
+  color: variables.$off1;
   margin-top: -1em;
   text-align: right;
 }
@@ -66,7 +66,7 @@
 }
 
 .postNavList small {
-  color: $foreground;
+  color: variables.$foreground;
   font-size: 0.5em;
   margin-left: 1em;
   order: 1;

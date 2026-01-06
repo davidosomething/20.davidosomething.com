@@ -1,11 +1,11 @@
-@import '../styles/variables';
-@import '../styles/mixins';
+@use '../styles/variables';
+@use '../styles/mixins';
 
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background: $background;
-  color: $foreground;
+  background: variables.$background;
+  color: variables.$foreground;
   font-display: swap;
 }
 
@@ -16,24 +16,24 @@ body {
 }
 
 :global(.headroom--pinned) {
-  box-shadow: 0 0 1px $border;
+  box-shadow: 0 0 1px variables.$border;
 }
 
 h4 {
-  color: $off1;
+  color: variables.$off1;
 }
 
 a {
-  color: $link;
+  color: variables.$link;
 }
 
 a:hover,
 a:active {
-  color: $linkHover;
+  color: variables.$linkHover;
 }
 
 details {
-  background: $altBackground;
+  background: variables.$altBackground;
   overflow: hidden;
   padding: 1rem 1rem 0;
 }
@@ -44,8 +44,8 @@ summary {
 }
 
 .mainHeader {
-  @include wrapper;
-  background: $background;
+  @include mixins.wrapper;
+  background: variables.$background;
   padding-bottom: 1rem;
   padding-top: 1rem;
 }
@@ -67,6 +67,6 @@ summary {
 }
 
 .main {
-  @include wrapper;
+  @include mixins.wrapper;
 }
 

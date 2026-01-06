@@ -1,11 +1,11 @@
-@import '../styles/variables';
+@use '../styles/variables';
 
 .subheader {
   margin-bottom: 0;
 }
 
 .datePublished {
-  color: $off1;
+  color: variables.$off1;
 }
 
 .categoryTitle {
